@@ -21,7 +21,7 @@ mermaid: true
 
 ## 1.2. 开发环境
 - 可以正常编译通过的Siflower SDK环境
-  该环境的搭建请参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start)
+  该环境的搭建请参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start)
 
 # 2. SPI介绍
 SPI是串行外设接口（Serial Peripheral Interface）的缩写。SPI，是一种高速，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间提供方便，正是出于这种简单易用的特性，如今越来越多的芯片集成了这种通信协议

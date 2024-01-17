@@ -42,7 +42,7 @@ graph TB
   A --> |connect| C[GSWITCH]
 ```
 GMAC-HNAT: 表示Siflower的千兆MAC, 其包含了HNAT硬件地址转换模块；
-HNAT模块介绍参考: [HNAT对接和使用手册](https://jbctest.github.io/2020/09/11/hnat_use_guide/)　　
+HNAT模块介绍参考: [HNAT对接和使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/hnat_use_guide/)　　
 GPHY: 表示外围千兆PHY, 包含不同厂家的PHY芯片；
 GSWITCH: 表示外围千兆SWITCH, 包含不同厂家的SWITCH芯片；
 支持的外围芯片型号列表见: [支持的外围芯片列表](#支持的外围芯片列表)
@@ -91,7 +91,7 @@ Wed Aug 26 16:42:44 2020 user.crit : dps_check_newdev_process has finished!
 
 #### VLAN划分
 
-参考: [以太网WAN-LAN划分指南](https://jbctest.github.io/2020/09/05/ethernet_wan_lan_division/)
+参考: [以太网WAN-LAN划分指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/05/ethernet_wan_lan_division/)
 
 #### Ethtool速度双工设置
 
@@ -99,7 +99,7 @@ Wed Aug 26 16:42:44 2020 user.crit : dps_check_newdev_process has finished!
 
 #### WAN-LAN自适应
 
-参考: [wan-lan自适应开发手册](https://jbctest.github.io/2020/09/11/wan_lan_auto_adapt/)
+参考: [wan-lan自适应开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/wan_lan_auto_adapt/)
 
 #### TS流量统计
 
@@ -109,7 +109,7 @@ TS全称为Traffic Statistic，用于针对设备进行流量统计，主要原�
 
 ### 环境搭建
 
-参考：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+参考：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 ### 对外提供的接口
 
@@ -356,9 +356,9 @@ static const struct net_device_ops sgmac_netdev_ops = {
 
 ### 参考文档
 
-[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
-[HNAT对接和使用手册](https://jbctest.github.io/2020/09/11/hnat_use_guide/)
-[以太网WAN-LAN划分指南](https://jbctest.github.io/2020/09/05/ethernet_wan_lan_division/)
-[wan-lan自适应开发手册](https://jbctest.github.io/2020/09/11/wan_lan_auto_adapt/)
+[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
+[HNAT对接和使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/hnat_use_guide/)
+[以太网WAN-LAN划分指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/05/ethernet_wan_lan_division/)
+[wan-lan自适应开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/wan_lan_auto_adapt/)
 
 ## FAQ

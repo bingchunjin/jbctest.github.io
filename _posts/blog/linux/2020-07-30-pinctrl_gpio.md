@@ -25,7 +25,7 @@ Siflower的芯片提供一些PAD脚，这些PAD脚可以配置为不同的功能
 
 ## 1.2. 开发环境
 - 可以正常编译通过的Siflower SDK环境
-  该环境的搭建请参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start)
+  该环境的搭建请参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start)
 
 # 2. Pinctrl和GPIO配置简介
 Siflower的芯片提供一些PAD脚, 在PAD模式下, 这些PAD脚处于默认状态, 用户必须要配置才能正常使用. 这些PAD脚可以配置成不同的模式,从而实现不同的功能. 以下表中的两个PAD脚为例
@@ -35,7 +35,7 @@ Siflower的芯片提供一些PAD脚, 在PAD模式下, 这些PAD脚处于默认�
 | I2C\_DAT        | FUNC\_MODE0   | GPIO11     | UART0\_CTS                        | UART2\_RXD  | I2C0\_DAT   | NC                 |
 | I2C\_CLK        | FUNC\_MODE0   | GPIO12     | UART0\_RTS                        | UART2\_TXD  | I2C0\_CLK   | NC                 |
 
-*note: 表中的内容节选自Siflower的IOMUX表格, 查看完整表格可以查看[Siflower IOMUX Table](https://jbctest.github.io/2020/09/03/iomux_table)*
+*note: 表中的内容节选自Siflower的IOMUX表格, 查看完整表格可以查看[Siflower IOMUX Table](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/iomux_table)*
 
 从上表可以看出, I2C_DAT(GPIO11)和I2C_CLK(GPIO12), 在配置成不同的模式的时候会有不同的功能,总共有GPIO_MODE, FUNC_MODE0,FUNC_MODE1,FUNC_MODE2,FUNC_MODE3五种模式可选,上面的两个PAD脚配置为不同的模式的时候,各自的功能见下表
 
@@ -179,7 +179,7 @@ pinctrl-0后面的内容就是pinctl配置处,各个Pin脚所使用的名字
 
 ### 3.1.3. Pinctrl的menuconfig
 应该在Linux的kernel中配置pinctrl驱动,有以下两种配置方法
-1. 首先保证需要使用的板型已经编译过一次(保证配置文件都已经生效, 参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start), 然后在openwrt-18.06目录下执行`make kernel_menuconfig`; 然后搜索`PINCTRL_SFAX8`;然后选中`PINCTRL_SFAX8`, 然后`make -j V=s`编译即可
+1. 首先保证需要使用的板型已经编译过一次(保证配置文件都已经生效, 参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start), 然后在openwrt-18.06目录下执行`make kernel_menuconfig`; 然后搜索`PINCTRL_SFAX8`;然后选中`PINCTRL_SFAX8`, 然后`make -j V=s`编译即可
 2. 修改`openwrt-18.06/target/linux/siflower/芯片型号/config-4.14_板型`文件
 e.g. openwrt-18.06/target/linux/siflower/sf19a28-fullmask/config-4.14_ac28
 在上面的文件中寻找以下内容,如果没有则添加
@@ -496,7 +496,7 @@ static int create_gpio_led(const struct gpio_led *template,
  	#include <linux/gpio.h>
 ```
 ## 4.5. GPIO在命令行中的使用
-以下步骤均是通过串口和相应的硬件进行交互,关于串口的使用请参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start), 以下的操作是Linux标准驱动所支持的.
+以下步骤均是通过串口和相应的硬件进行交互,关于串口的使用请参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start), 以下的操作是Linux标准驱动所支持的.
 
 首先，gpio在linux系统起来之后的操作路径为：/sys/class/gpio
 若发现没有该路径的话，可以在linux的kernel menuconfig中选中Device Drivers > GPIOSupport > /sys/class/gpio/... (sysfs interface)

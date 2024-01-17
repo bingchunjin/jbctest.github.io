@@ -23,7 +23,7 @@ Siflower的芯片提供一些PAD脚，这些PAD脚可以配置为不同的功能
 
 ## 1.2. 开发环境
 - 可以正常编译通过的Siflower SDK环境
-  该环境的搭建请参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start)
+  该环境的搭建请参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start)
 
 # 2. SF19A2890 fullmask IOMUX Table
 
@@ -85,7 +85,7 @@ Siflower的芯片提供一些PAD脚，这些PAD脚可以配置为不同的功能
 # 3. 如何在shell命令行获取PAD脚的状态
 ## 3.1. kernel选择DEBUG_FS配置
 
-可以通过make kernel_menuconfig选择, 然后编译镜像. 如何编译烧录镜像参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start)
+可以通过make kernel_menuconfig选择, 然后编译镜像. 如何编译烧录镜像参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start)
 
 DEBUG_FS的位置如下:
 ```
@@ -189,4 +189,4 @@ in Pin脚的电平状态有如下
 | hi     | 高电平       |
 
 # FAQ
-本文主要是提供Siflower的IOMUX Table, 关于IOMUX的具体应用请参考[Pinctrl 和 GPIO 使用手册](https://jbctest.github.io/2020/07/30/pinctrl_gpio)
+本文主要是提供Siflower的IOMUX Table, 关于IOMUX的具体应用请参考[Pinctrl 和 GPIO 使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/07/30/pinctrl_gpio)

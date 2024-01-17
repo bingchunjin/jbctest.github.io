@@ -23,7 +23,7 @@ mermaid: true
 
 - 开发与测试环境
 
-参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 - WAN-LAN介绍
 
@@ -35,11 +35,11 @@ mermaid: true
 
 ## 2 项目引用
 
-- 配置参数说明中vlan划分WAN-LAN部分可以参考[外围switch芯片对接和使用手册](https://jbctest.github.io/2020/09/11/new_switch_import_guide/)
+- 配置参数说明中vlan划分WAN-LAN部分可以参考[外围switch芯片对接和使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/new_switch_import_guide/)
 
-- wifi的wds功能可以参考[WDS开发及使用手册](https://jbctest.github.io/2020/09/02/WDS_development_and_user_manual/)
+- wifi的wds功能可以参考[WDS开发及使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/02/WDS_development_and_user_manual/)
 
-- network文件的参数参考[config文件配置手册](https://jbctest.github.io/2020/09/11/config_setting/)
+- network文件的参数参考[config文件配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/config_setting/)
 
 ## 3 开发详情
 

@@ -22,7 +22,7 @@ mermaid: true
 
 ## 文档模板
 
-文档使用markdown语言，markdown语法参照[wiki-markdown](https://jbctest.github.io/wiki/markdown/)。
+文档使用markdown语言，markdown语法参照[wiki-markdown](https://bingchunjin.github.io/jbctest.github.io//wiki/markdown/)。
 
 文档中必须包含文档头
 
@@ -121,10 +121,10 @@ erDiagram
 在markdown中插入链接
 
 ```
-[wiki-markdown](https://jbctest.github.io/wiki/markdown/)
+[wiki-markdown](https://bingchunjin.github.io/jbctest.github.io//wiki/markdown/)
 ```
 
-[wiki-markdown](https://jbctest.github.io/wiki/markdown/)
+[wiki-markdown](https://bingchunjin.github.io/jbctest.github.io//wiki/markdown/)
 
 在mermaid中插入链接
 ```mermaid

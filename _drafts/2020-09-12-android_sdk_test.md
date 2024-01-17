@@ -33,7 +33,7 @@ SiFlower、矽昌和矽昌其它商标均为上海矽昌微电子有限公司的
 
 # 测试环境
 
-软件运行环境： JDK1.8及以上、Android SDK API 15及以上、完成[Siflower Android SDK的集成](https://jbctest.github.io/2020/07/29/android_sdk/)
+软件运行环境： JDK1.8及以上、Android SDK API 15及以上、完成[Siflower Android SDK的集成](https://bingchunjin.github.io/jbctest.github.io//2020/07/29/android_sdk/)
 
 测试工具： Android Studio开发工具、android设备(手机、平板、电视等)
 
@@ -43,9 +43,9 @@ SiFlower、矽昌和矽昌其它商标均为上海矽昌微电子有限公司的
 
 # 相关文档
 
-[Android SDK集成指南](https://jbctest.github.io/2020/07/29/android_sdk/#android-sdk%E9%9B%86%E6%88%90%E6%8C%87%E5%8D%97)
+[Android SDK集成指南](https://bingchunjin.github.io/jbctest.github.io//2020/07/29/android_sdk/#android-sdk%E9%9B%86%E6%88%90%E6%8C%87%E5%8D%97)
 
-[Siwifi接口测试手册](https://jbctest.github.io/2020/09/11/SiWiFi_interface_test/#42-app%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95)
+[Siwifi接口测试手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/SiWiFi_interface_test/#42-app%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95)
 
 ## 1 接口类型
 
@@ -246,7 +246,7 @@ logcat中查看获取到的信息
 
 ### 3.2 接口初始化
 
-参照SDK集成文档中的[SDK初始化](https://jbctest.github.io/2020/07/29/android_sdk/#4sdk-%E5%88%9D%E5%A7%8B%E5%8C%96)部分初始化
+参照SDK集成文档中的[SDK初始化](https://bingchunjin.github.io/jbctest.github.io//2020/07/29/android_sdk/#4sdk-%E5%88%9D%E5%A7%8B%E5%8C%96)部分初始化
 
 初始化后，还需要三个前置条件：用户登录、获取绑定的路由器、建立websocket连接:
 

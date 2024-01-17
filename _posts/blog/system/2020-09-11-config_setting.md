@@ -33,7 +33,7 @@ config文件为openwrt用于存储配置的文件，方便用户进行配置。�
 
 - [openwrt 网络设置官方文档](https://oldwiki.archive.openwrt.org/zh-cn/doc/uci/network)
 
-- [wifi架构和配置手册](https://jbctest.github.io/2020/08/12/wifi_architecture_and_configuration_manual/)
+- [wifi架构和配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/12/wifi_architecture_and_configuration_manual/)
 
 ## 3 config配置文件详情
 
@@ -299,7 +299,7 @@ config another_section
   |group|int|-|bridge中的分组，各个不同的group之间在bridge中是不能互相访问的。默认2.4G为0，5G为1。|
   |netisolate|boolean|0|如果配置为1，则从该bssid下的设备无法访问同一bridge中其它bssid的设备。|
 
-  更多详细信息可参考[wifi架构和配置手册](https://jbctest.github.io/2020/08/12/wifi_architecture_and_configuration_manual/)。
+  更多详细信息可参考[wifi架构和配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/12/wifi_architecture_and_configuration_manual/)。
 
 ### 5.2 /etc/config/network
 

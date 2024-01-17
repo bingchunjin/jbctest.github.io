@@ -36,13 +36,13 @@ wan/lan 自适应具有三种配置wan口的功能：开机自动配置、立即
 
 - [维基百科-DHCP协议](https://zh.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)
 
-- [config文件配置手册](https://jbctest.github.io/2020/09/11/config_setting/)
+- [config文件配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/config_setting/)
 
 - [openwrt uci官方文档](https://oldwiki.archive.openwrt.org/zh-cn/doc/techref/uci)
 
-- [以太网wan-lan划分指南](https://jbctest.github.io/2020/09/05/ethernet_wan_lan_division/)
+- [以太网wan-lan划分指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/05/ethernet_wan_lan_division/)
 
-- [SiWiFi接口开发手册](https://jbctest.github.io/2020/09/11/SiWiFi_interface_develop/)
+- [SiWiFi接口开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/SiWiFi_interface_develop/)
 
 ## 3 开发详情
 
@@ -62,7 +62,7 @@ wan/lan 自适应具有三种配置wan口的功能：开机自动配置、立即
 |uci delete network.test|删除test节点|
 |uci commit|保存修改|
 
-更多地了解如何使用uci指令配置config文件，请参考[config文件配置手册](https://jbctest.github.io/2020/09/11/config_setting/)或[openwrt uci官方文档](https://oldwiki.archive.openwrt.org/zh-cn/doc/techref/uci)
+更多地了解如何使用uci指令配置config文件，请参考[config文件配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/config_setting/)或[openwrt uci官方文档](https://oldwiki.archive.openwrt.org/zh-cn/doc/techref/uci)
 
 #### 3.1.2 vlan划分
 
@@ -116,7 +116,7 @@ uci set network.@switch_vlan[1].ports='2 16t'
 uci commit
 ```
 
-更多vlan划分的内容，请参考[以太网wan-lan划分指南](https://jbctest.github.io/2020/09/05/ethernet_wan_lan_division/)。如果能划分出5个vlan分别对应5个路由器端口，那么就能通过向外发送dhcp discover数据包的方法寻找dhcp服务器，从而知道哪一个口应该成为wan口。
+更多vlan划分的内容，请参考[以太网wan-lan划分指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/05/ethernet_wan_lan_division/)。如果能划分出5个vlan分别对应5个路由器端口，那么就能通过向外发送dhcp discover数据包的方法寻找dhcp服务器，从而知道哪一个口应该成为wan口。
 
 #### 3.1.3 dhcp协议
 
@@ -192,7 +192,7 @@ start() {
 
 ### 3.3.3 auto_adapt.htm
 
-用于显示其功能的htm文件，配合feeds/luci/modules/luci-mod-network/luasrc/controller/admin/network文件，将自适应功能以网页+接口调用的形式可视化。开发流程可参考[SiWiFi接口开发手册](https://jbctest.github.io/2020/09/11/SiWiFi_interface_develop/)。最终界面如下所示：
+用于显示其功能的htm文件，配合feeds/luci/modules/luci-mod-network/luasrc/controller/admin/network文件，将自适应功能以网页+接口调用的形式可视化。开发流程可参考[SiWiFi接口开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/SiWiFi_interface_develop/)。最终界面如下所示：
 
 ![auto_adapt_htm](/assets/images/demo/auto_adapt_htm.png)
 

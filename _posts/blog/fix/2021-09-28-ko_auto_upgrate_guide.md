@@ -16,7 +16,7 @@ mermaid: false
 使用Siflower ko文件进行Openwrt系统开发的技术人员，要求具备基础脚本和Makefile编写能力。
 
 ### 1.2 开发环境
-openwrt系统编译环境，环境搭建请参考[快速入门手册](https://jbctest.github.io/2020/08/05/quick_start/)
+openwrt系统编译环境，环境搭建请参考[快速入门手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 ### 1.3 相关背景
 随着客制化需求的增加，人工手动编译更新ko文件的速率较低，有时难以满足客户及时获取符合自己需求的ko文件的需求，因此引入了系统自动编译更新ko，以提高工作效率。
@@ -40,7 +40,7 @@ openwrt系统编译环境，环境搭建请参考[快速入门手册](https://jb
 ```
 
 ### 2.2 引入一个新的板型或使用公用板型
-板型引入请参考[新的版型引入指南](https://jbctest.github.io/2020/09/08/newBoardImportGuide/) ，以下以a28_ac28s板型为例。
+板型引入请参考[新的版型引入指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/newBoardImportGuide/) ，以下以a28_ac28s板型为例。
 
 ### 2.3 修改相关文件
 - 分别修改以下文件夹当前目录下的Makefile：
@@ -86,8 +86,8 @@ openwrt系统编译环境，环境搭建请参考[快速入门手册](https://jb
 
 ## 3 项目引用
 ### 3.1 参考文档
-- [快速入门手册](https://jbctest.github.io/2020/08/05/quick_start/)
-- [新的版型引入指南](https://jbctest.github.io/2020/09/08/newBoardImportGuide/)
+- [快速入门手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
+- [新的版型引入指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/newBoardImportGuide/)
 
 ## 4 测试用例
 更新ko后编译烧录镜像，正常运行且基础功能正常即更新成功。

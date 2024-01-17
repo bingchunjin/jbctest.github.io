@@ -181,7 +181,7 @@ mermaid: false
 
 - 下载源码
 
-    参考[快速入门手册](https://jbctest.github.io/2020/08/05/quick_start/)获取下载链接，使用git clone下载源码
+    参考[快速入门手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)获取下载链接，使用git clone下载源码
 
     ![env_5](/assets/images/quick_image/env_5.png)
 

@@ -30,7 +30,7 @@ topmost: true
 
 Siwifi的系统方案源于openwrt开源系统，必须基于GNU/Linux, BSD or MacOSX进行编译
 为了更顺利的进行开发，我们推荐使用ubuntu作为默认的编译环境，**ubuntu14.04、ubuntu16.04**都是经过详细测试的操作系统版本，其他系统版本可能会存在编译问题
-windows下安装，参考[虚拟机安装及编译环境配置手册](https://jbctest.github.io/2020/08/05/ubuntu_install_complile_env_config_guide/)这里有详细的关于虚拟机安装，ubuntu编译环境配置等步骤
+windows下安装，参考[虚拟机安装及编译环境配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/ubuntu_install_complile_env_config_guide/)这里有详细的关于虚拟机安装，ubuntu编译环境配置等步骤
 
 ## 2 快速入门详情
 
@@ -45,14 +45,14 @@ graph TB;
 
 #### 2.1.1 环境准备
 
-- 参考[虚拟机安装及编译环境配置手册](https://jbctest.github.io/2020/08/05/ubuntu_install_complile_env_config_guide/)搭建开发环境
+- 参考[虚拟机安装及编译环境配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/ubuntu_install_complile_env_config_guide/)搭建开发环境
 
 - 需要有SDK支持的硬件平台
   >AC28 路由板型(intel switch芯片)
    EVB 开发板(realtek switch芯片)
 
   上述对应的硬件板型可以联系矽昌官方获取
-  如果是客户新做的硬件，需要参考[新的版型引入指南](https://jbctest.github.io/2020/09/08/newBoardImportGuide/)根据硬件配置建立对应的板型配置后，再进行编译
+  如果是客户新做的硬件，需要参考[新的版型引入指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/newBoardImportGuide/)根据硬件配置建立对应的板型配置后，再进行编译
 
 #### 2.1.2 源码下载
 
@@ -107,12 +107,12 @@ graph TB;
 
   - 如果开发人员发现重大公共性的bug，需要提交代码
    1)可以在SDK issue进行发布，由矽昌来解决并更新代码
-   2)可以通过[pull requests](https://jbctest.github.io/wiki/github_pull_reqest_submit/)的方法提交代码到master分支，由矽昌进行审核之后再合入代码
+   2)可以通过[pull requests](https://bingchunjin.github.io/jbctest.github.io//wiki/github_pull_reqest_submit/)的方法提交代码到master分支，由矽昌进行审核之后再合入代码
 
 - fork 分支
 
   下载源码时，选择fork代码库然后再下载
-  如果需要更新或者上传代码可以参考[pull requests](https://jbctest.github.io/wiki/github_pull_reqest_submit/)的方法提交更新
+  如果需要更新或者上传代码可以参考[pull requests](https://bingchunjin.github.io/jbctest.github.io//wiki/github_pull_reqest_submit/)的方法提交更新
 
 #### 2.1.4 源码目录
 
@@ -250,7 +250,7 @@ graph TB;
 
 - 完整的FLASH镜像
 
-  参考[PCBA工具使用手册](https://jbctest.github.io/2020/09/10/pcba_tool_interface_guide/)FAQ章节PCBA镜像说明
+  参考[PCBA工具使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/10/pcba_tool_interface_guide/)FAQ章节PCBA镜像说明
 
 
 ##### 2.1.6.1 网页更新
@@ -497,7 +497,7 @@ A：出现图示问题是由于第一次脚本编译，有一些package的依赖
 
 A：因为硬件的不同，编译时需要对版型进行区分选择相应的配置文件
 
-参考[新的版型引入指南](https://jbctest.github.io/2020/09/08/newBoardImportGuide/)
+参考[新的版型引入指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/newBoardImportGuide/)
 
 **Q：如何判断编译成功？**
 A：出现图示log即为编译成功。编译成功会在/bin/target/siflower/下生成对应的镜像文件

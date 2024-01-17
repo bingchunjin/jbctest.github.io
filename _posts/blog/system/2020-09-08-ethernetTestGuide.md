@@ -128,6 +128,6 @@ Siflower提供完整详细的测试报告，如需要请联系Siflower管理人�
 
 ### 参考文档
 
-[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 ## FAQ

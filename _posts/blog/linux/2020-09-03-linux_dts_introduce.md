@@ -20,7 +20,7 @@ mermaid: true
 
 ## 1.2. 开发环境
 - 可以正常编译通过的Siflower SDK环境
-  该环境的搭建请参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start)
+  该环境的搭建请参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start)
 
 # 2. 设备树
 ## 2.1. 设备树用法

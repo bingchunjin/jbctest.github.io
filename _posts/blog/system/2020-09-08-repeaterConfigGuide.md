@@ -22,7 +22,7 @@ mermaid: true
 
 ## 开发环境
 
-Openwrt源码编译环境，环境搭建见：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+Openwrt源码编译环境，环境搭建见：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 中继器串口调试环境
 

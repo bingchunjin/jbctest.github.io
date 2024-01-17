@@ -21,11 +21,11 @@ mermaid: true
 
 - uboot下PCBA模式校准
   PCBA校准适用于烧录具有pcba镜像的siflower方案芯片的产品，在uboot下且进入PCBA测试模式，结合矽昌PCBA工具使用
-  PCBA工具使用以及配置参考[PCBA工具使用手册](https://jbctest.github.io/2020/09/10/pcba_tool_interface_guide/)
+  PCBA工具使用以及配置参考[PCBA工具使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/10/pcba_tool_interface_guide/)
 
 - 系统下ate模式校准
   系统下校准指令ate_cmd主要是通过ate_tool这个package实现的，编译镜像时选上这个package即可，所有指令均是在系统下直接操作
-  ate_cmd说明参考[SIFLOWER射频测试手册](https://jbctest.github.io/2020/12/01/siflower_ate_test_guide/)
+  ate_cmd说明参考[SIFLOWER射频测试手册](https://bingchunjin.github.io/jbctest.github.io//2020/12/01/siflower_ate_test_guide/)
 
 ## 2 PCBA校准
 
@@ -159,7 +159,7 @@ ate_cmd wlan1 fastconfig  -l 1024 -f 5180 -c 5210 -w 3 -u 3 -m 4 -i 9 -g 0 -B 1 
 ```
 ate_cmd wlan1 fastconfig -q
 ```
-各个参数详细说明参考[SIFLOWER射频测试手册](https://jbctest.github.io/2020/12/01/siflower_ate_test_guide/)
+各个参数详细说明参考[SIFLOWER射频测试手册](https://bingchunjin.github.io/jbctest.github.io//2020/12/01/siflower_ate_test_guide/)
 
 
 ### 3.3 校准步骤

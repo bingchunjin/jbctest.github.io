@@ -92,7 +92,7 @@ sf_setup文件夹：主要包含测试的配置文件
 #### 1.4.3 工具配置文件说明
 
 - board.ini配置说明
-    board.ini包含了factory分区信息写入，参考[FLASH分区开发手册](https://jbctest.github.io/2020/09/08/flashPartitionGuide/)
+    board.ini包含了factory分区信息写入，参考[FLASH分区开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/flashPartitionGuide/)
     factory说明包含了待测板PA类型（内置或者外置），wlan port选择(gswitch/phy)，网口数量,led数量,按键等，可根据产品实际情况修改适配，具体列表及含义如下：
 
     |内容|含义|
@@ -118,8 +118,8 @@ sf_setup文件夹：主要包含测试的配置文件
     |hw_feature=0xfffffffe|要写入产品的硬件特性,默认为0xffffffff，每一位表示一个特性|
     |login_info=0xfffffffe|要写入产品的登录信息，控制telnet server，ssh server，uart等(目前仅实现telnet)|
     |vender=siflower|要写入产品的公司名称|
-    |product_key=c63999ff2e99971f2adbf9375be748fb|要写入产品的产品密钥，从开放平台获取，参考[矽昌开放平台用户手册](https://jbctest.github.io/2020/09/12/open_platform_user_guide/)|
-    |rom_type=87|要写入产品的rom_type，从开放平台获取，参考[矽昌开放平台用户手册](https://jbctest.github.io/2020/09/12/open_platform_user_guide/)|
+    |product_key=c63999ff2e99971f2adbf9375be748fb|要写入产品的产品密钥，从开放平台获取，参考[矽昌开放平台用户手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/12/open_platform_user_guide/)|
+    |rom_type=87|要写入产品的rom_type，从开放平台获取，参考[矽昌开放平台用户手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/12/open_platform_user_guide/)|
     |24g_rx_test_power=-40|2.4G接收信号能量|
     |5g_rx_test_power=-40|5G接收信号能量|
     |xo_default_value=0xfb|校准晶振时的默认值(试产时根据多次校准结果从测试log中读取)，可减少晶振校准时间|
@@ -591,7 +591,7 @@ A:
   ![img17](/assets/images/pcba_test_image/img17.png)
 
   pcba-test为flash最后的512KB，用于存放pcba镜像。正常系统启动时不存在这个分区，仅供pcba测试使用。在pcba测试结束后，该分区会作为系统的rootfs-data使用。
-  用户可以按照此分区划分将三个文件进行打包，自行操作时请往factory分区写入“PCBT”标志，写入位置参考[FLASH分区开发手册](https://jbctest.github.io/2020/09/08/flashPartitionGuide/)
+  用户可以按照此分区划分将三个文件进行打包，自行操作时请往factory分区写入“PCBT”标志，写入位置参考[FLASH分区开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/flashPartitionGuide/)
 
   另外也可以使用siflower image_maker工具
 

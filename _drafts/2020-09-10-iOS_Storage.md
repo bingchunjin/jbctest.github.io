@@ -50,9 +50,9 @@ SiFlower、矽昌和矽昌其它商标均为上海矽昌微电子有限公司的
 
   * 硬件产品支持USB存储功能
 
-  * 使用SiWiFi Openwrt SDK完成产品固件的调试  [快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+  * 使用SiWiFi Openwrt SDK完成产品固件的调试  [快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
-  * 完成 [iOS SDK集成](https://jbctest.github.io/2020/08/05/iOS_SDK/)
+  * 完成 [iOS SDK集成](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/iOS_SDK/)
 
   * 了解iOS App开发、上线、samba协议、流媒体文件播放等
 
@@ -85,7 +85,7 @@ SDK导入完成后需要在项目中添加相关依赖系统库:
 
 ![capabilities](/assets/images/iOS-SDK-Storage/ios-sdk-usb-lib.png)
 
-更多关于SDK集成和使用，请参考[iOS SDK集成指南](https://jbctest.github.io/2020/08/05/iOS_SDK/)
+更多关于SDK集成和使用，请参考[iOS SDK集成指南](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/iOS_SDK/)
 
 # 存储功能使用
 
@@ -495,7 +495,7 @@ ls /mnt/sda1/
 
 * 检查路由器USB存储设备测试结果
 * 检查硬件USB模块是否正常工作
-* 检查路由器软件[usb驱动配置选项](https://jbctest.github.io/2020/09/03/usb_driver/#4-usb%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE%E9%80%89%E9%A1%B9)
+* 检查路由器软件[usb驱动配置选项](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/usb_driver/#4-usb%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE%E9%80%89%E9%A1%B9)
 
 
 ## 2 局域网下路由器USB存储设备Samba访问失败

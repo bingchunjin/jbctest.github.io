@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://jbctest.github.io
+url: https://bingchunjin.github.io/jbctest.github.io/
 date_format: "ordinal"
 title: 矽昌通信
 subtitle: "公众号：矽昌通信"
@@ -11,7 +11,7 @@ keywords: 无线通信
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
-repository: Siflower/jbctest.github.io
+repository: bingchunjin/jbctest.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:

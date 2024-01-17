@@ -36,7 +36,7 @@ mermaid: true
 
 此项目参考文档
 
-- [wiki-markdown](https://jbctest.github.io/wiki/markdown/)
+- [wiki-markdown](https://bingchunjin.github.io/jbctest.github.io//wiki/markdown/)
 
 ### 内部相关
 内部开发的redmine， 提交等

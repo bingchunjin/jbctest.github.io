@@ -30,9 +30,9 @@ mermaid: true
 
 # 相关文档
 
-[iOS SDK集成指南](https://jbctest.github.io/2020/07/29/iOS_sdk/#iOS-sdk%E9%9B%86%E6%88%90%E6%8C%87%E5%8D%97)
+[iOS SDK集成指南](https://bingchunjin.github.io/jbctest.github.io//2020/07/29/iOS_sdk/#iOS-sdk%E9%9B%86%E6%88%90%E6%8C%87%E5%8D%97)
 
-[Siwifi接口测试手册](https://jbctest.github.io/2020/09/11/SiWiFi_interface_test/#42-app%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95)
+[Siwifi接口测试手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/SiWiFi_interface_test/#42-app%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95)
 
 ## 1 接口调用条件
 

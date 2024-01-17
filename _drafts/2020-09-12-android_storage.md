@@ -37,7 +37,7 @@ SiFlower、矽昌和矽昌其它商标均为上海矽昌微电子有限公司的
 
 * 熟悉相关硬件产品的功能和使用
 
-* 使用SiWiFi Openwrt SDK完成产品固件的调试，且固件中包含USB模块，具体可参考 [USB驱动开发手册中的自动挂载配置](https://jbctest.github.io/2020/09/03/usb_driver/#42-usb-%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD%E9%85%8D%E7%BD%AE)
+* 使用SiWiFi Openwrt SDK完成产品固件的调试，且固件中包含USB模块，具体可参考 [USB驱动开发手册中的自动挂载配置](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/usb_driver/#42-usb-%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD%E9%85%8D%E7%BD%AE)
 
 * 了解Android开发、上线等一系列流程
 

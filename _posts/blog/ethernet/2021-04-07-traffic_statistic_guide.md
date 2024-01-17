@@ -57,7 +57,7 @@ NF_INET_FORWARD：上传流量统计点．此点是转发之前的点, 转发的
 NF_INET_POST_ROUTING：下载流量统计点．NFPROTO_IPV4协议的最后一个点, 此处可以统计到下行流量, 但是此处有一个关键点是mac地址转换(NAT)是在POSTROUTING挂载点之后才被执行, 所以到达此处的下行流量的mac地址还是外网到路由器wan的mac, 要想依据mac地址进行下行流量统计, 需要进行一步mac地址转换操作, 具体实现见redmine#[7429](http://redmine.siflower.cn/redmine/issues/7429)；
 
 - 走硬件的报文统计
-走硬件转发的报文需要hnat模块报文计数功能支持，hnat模块详细介绍见:[HNAT介绍文档](https://jbctest.github.io/2020/09/11/hnat_use_guide/)。
+走硬件转发的报文需要hnat模块报文计数功能支持，hnat模块详细介绍见:[HNAT介绍文档](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/hnat_use_guide/)。
 目前hnat仅支持DNAT时依据dmac查询报文数量，因此走硬件的报文统计仅支持下载流量统计，且由于仅支持查询报文数量，无法查询报文长度，因此走硬件的下行流量默认使用的mtu 1500进行的报文统计，和实际下载流量略有差异．
 
 #### 5.2.2 设备拉黑功能

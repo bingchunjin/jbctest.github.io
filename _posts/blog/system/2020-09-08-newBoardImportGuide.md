@@ -22,7 +22,7 @@ mermaid: true
 
 ## 开发环境
 
-openwrt系统编译环境，环境搭建参考：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+openwrt系统编译环境，环境搭建参考：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 开发板调试环境
 
@@ -36,7 +36,7 @@ openwrt系统编译环境，环境搭建参考：[快速入门](https://jbctest.
 
 ### uboot引入新版型
 
-uboot引入新版型详细可以参考：[U-boot开发手册](https://jbctest.github.io/2020/09/08/ubootDevelopmentManual/)
+uboot引入新版型详细可以参考：[U-boot开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/ubootDevelopmentManual/)
 
 ### Openwrt引入新版型
 
@@ -139,7 +139,7 @@ sf19a28_fullmask_ac28_v5.dts为ac28_v5版型配置项。
 在target/linux/siflower/sf19a28-fullmask/下有各个版型的差异化配置，如base-files-SF19A28-AC28-V5，其包含了不同版型的差异化配置，如生成network配置文件的关键脚本01_network，因为硬件差异其配置可能略有不同。
 
 network和wireless两个配置文件是新版型引入的关键配置，因为其决定了产品有线和无线的可用性，是产品的关键所在，所以了解其生成和配置差异尤为重要。
-其中关于上述2个配置文件的详细内容和参数说明可参考：[config文件配置手册](https://jbctest.github.io/2020/09/11/config_setting/)
+其中关于上述2个配置文件的详细内容和参数说明可参考：[config文件配置手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/config_setting/)
 其中network、wireless配置文件的生成流程如下：
 ```mermaid
 graph TB
@@ -203,11 +203,11 @@ linux需要增加相应的dts文件和Kconfig选项。
 
 #### 烧录编译出来的镜像
 
-参考[快速入门](https://jbctest.github.io/2020/08/05/quick_start/) 镜像更新章节
+参考[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/) 镜像更新章节
 
 注意：第一次烧录镜像到新板子之后，需要调一下rgmii接口的delay值以及确认switch gpio reset脚gpio
 
-方法参考[外围switch对接和使用手册](https://jbctest.github.io/2020/09/11/new_switch_import_guide/)
+方法参考[外围switch对接和使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/new_switch_import_guide/)
  ```3.1 对接准备``` 第4点 switch的reset
  ```3.1 对接准备``` 第7点 调整tx/rx delay
 
@@ -217,7 +217,7 @@ linux需要增加相应的dts文件和Kconfig选项。
 
 ### 参考文档
 
-[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 
 ## 开发详情
@@ -263,11 +263,11 @@ Makefile组织
 
 ## 测试用例
 
-编译好镜像，烧录完成后，可以进行基础有线/无线上网测试，基础网页设置测试等，可参考：[以太网测试介绍](https://jbctest.github.io/2020/09/08/ethernetTestGuide/)。
+编译好镜像，烧录完成后，可以进行基础有线/无线上网测试，基础网页设置测试等，可参考：[以太网测试介绍](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/ethernetTestGuide/)。
 
 ### 测试环境配置
 
-编译好对应板型镜像后，烧录测试即可，烧录方法见：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+编译好对应板型镜像后，烧录测试即可，烧录方法见：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 ### 测试流程和测试结果
 

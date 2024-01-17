@@ -22,7 +22,7 @@ mermaid: true
 
 ## 开发环境
 
-Uboot代码编译环境，环境搭建见：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+Uboot代码编译环境，环境搭建见：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 Siflower开发板测试环境。
 
@@ -359,12 +359,12 @@ uboot引入新版型主要涉及到新版型配置文件改动，以太网驱动
 
 #### 以太网驱动适配
 
-当新增版型引入了新的有线设备时，需要对应适配以太网驱动，对应文件drivers/net/sfa18_gmac.c，详细引入新的有线设备（gphy、gswitch）可以参考：[gmac外围芯片对接手册](https://jbctest.github.io/2020/09/11/new_switch_import_guide/)
+当新增版型引入了新的有线设备时，需要对应适配以太网驱动，对应文件drivers/net/sfa18_gmac.c，详细引入新的有线设备（gphy、gswitch）可以参考：[gmac外围芯片对接手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/new_switch_import_guide/)
 
 
 ### Uboot物料对接
 
-Siflower Uboot支持多种物料对接，包含不同DDR和Flash型号，详细参考：[Flash和DDR物料调试指南](https://jbctest.github.io/2020/09/03/ddr_flash/)
+Siflower Uboot支持多种物料对接，包含不同DDR和Flash型号，详细参考：[Flash和DDR物料调试指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/ddr_flash/)
 
 
 ### DDR通用参数使用配置
@@ -392,15 +392,15 @@ Siflower Uboot支持多种物料对接，包含不同DDR和Flash型号，详细�
 
 ### 参考文档
 
-[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
-[Flash和DDR物料调试指南](https://jbctest.github.io/2020/09/03/ddr_flash/)
+[Flash和DDR物料调试指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/ddr_flash/)
 
 
 ## FAQ
 
 **Q：uboot烧录失败怎么处理**
-A：uboot烧录失败后无法继续通过uboot更新镜像，可通过irom usb下载，或者摘下flash使用烧录器的方式重新烧录镜像，详细使用方法参考：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+A：uboot烧录失败后无法继续通过uboot更新镜像，可通过irom usb下载，或者摘下flash使用烧录器的方式重新烧录镜像，详细使用方法参考：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 **Q：uboot中gpio使用例子**
 A：

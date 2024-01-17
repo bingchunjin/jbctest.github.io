@@ -32,7 +32,7 @@ siflower SDK环境
 
 opwewrt1806[发行说明](https://openwrt.org/zh/releases/18.06/notes-18.06.0)
 
-siflower软件SDK获取以及使用参考[快速入门手册](https://jbctest.github.io/2020/08/05/quick_start/)
+siflower软件SDK获取以及使用参考[快速入门手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 ## 3 开发详情
 
@@ -111,13 +111,13 @@ APP应用方面，我们开发了IOS和Android应用，云端服务。可以支�
 
   > 针对用户不清楚wan口lan口，插错网线导致不能上网的情况，我们进行了wan/lan自适应的开发，其会自动根据当前的网线连接情况划分wan/lan口。如果不小心将外网网线插错到了lan口，路由器会自动将wan重新划分到该网口上，成功配置后路由器依旧可以上网。开发使用脚本语言，开机自启动。
 
-  开发详情参考[wan-lan自适应开发手册](https://jbctest.github.io/2020/09/11/wan_lan_auto_adapt/)
+  开发详情参考[wan-lan自适应开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/wan_lan_auto_adapt/)
 
 * **Repeater自动弹窗服务介绍**
 
   > 针对中继器产品形态，提供独立的中继器页面，以及用户连接之后，手机/PC自动跳转浏览器显示配置页面，快速引导用户完成配置。
 
-  开发详情参考[中继器配置相关说明](https://jbctest.github.io/2020/09/08/repeaterConfigGuide/)
+  开发详情参考[中继器配置相关说明](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/repeaterConfigGuide/)
 
 * **设备上下线服务介绍**
 
@@ -133,7 +133,7 @@ APP应用方面，我们开发了IOS和Android应用，云端服务。可以支�
 
   > 2.4G 5G 合并ssid+密码设置，同时根据客户设备的接入情况，选择性的引导客户接入5G网络。
 
-  开发详情参考[wifi双频合一使用手册](https://jbctest.github.io/2020/09/09/band_single_ssid/)
+  开发详情参考[wifi双频合一使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/09/band_single_ssid/)
 
 * **WiFi无感接入**
 
@@ -159,9 +159,9 @@ APP应用方面，我们开发了IOS和Android应用，云端服务。可以支�
   > siflower自行设计了适用于路由器、86v、AC、中继器等不同产品的管理页面，并且支持在管理页面快速客制化修改和二次开发。
     同时也开发了Android/IOS 矽路由app进行路由设备功能管理，我们也提供android/ios SDK供客户进行二次开发。
 
-  网页开发参考[管理网页客制化手册](https://jbctest.github.io/2020/07/31/manage_web_custom_guide/) [管理网页开发手册](https://jbctest.github.io/2020/08/05/manage_web_develop_guide/)
+  网页开发参考[管理网页客制化手册](https://bingchunjin.github.io/jbctest.github.io//2020/07/31/manage_web_custom_guide/) [管理网页开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/manage_web_develop_guide/)
 
-  app开发参考[Android SDK集成指南](https://jbctest.github.io/2020/07/29/android_sdk/) [iOS SDK集成指南](https://jbctest.github.io/2020/08/05/iOS_SDK/)
+  app开发参考[Android SDK集成指南](https://bingchunjin.github.io/jbctest.github.io//2020/07/29/android_sdk/) [iOS SDK集成指南](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/iOS_SDK/)
 
 ##### 3.1.1.6 Siflower Linux模块介绍
 
@@ -172,7 +172,7 @@ APP应用方面，我们开发了IOS和Android应用，云端服务。可以支�
   > 对于使用外部switch芯片，我们开发了特别的ethtool_ops接口。
   除了支持GPHY的速度双工获取/设置，也支持GSWITCH每个口的速度双工获取/设置。
 
-  参考[有线网络和服务介绍](https://jbctest.github.io/2020/09/08/ethernetGuide/)
+  参考[有线网络和服务介绍](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/ethernetGuide/)
 
 * **WiFi动态功耗调整**
 
@@ -182,7 +182,7 @@ APP应用方面，我们开发了IOS和Android应用，云端服务。可以支�
 
   > hnat模块操作接口，向上层提供nat offload功能。
 
-  参考[HNAT对接和使用手册](https://jbctest.github.io/2020/09/11/hnat_use_guide/)
+  参考[HNAT对接和使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/hnat_use_guide/)
 
 * **pkt send tool**
 
@@ -200,7 +200,7 @@ APP应用方面，我们开发了IOS和Android应用，云端服务。可以支�
   | 千兆SWITCH | Intel7084 |
   | 千兆SWITCH | IP1707 |
 
-  外围芯片对接参考[外网switch芯片对接和使用手册](https://jbctest.github.io/2020/09/11/new_switch_import_guide/)
+  外围芯片对接参考[外网switch芯片对接和使用手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/new_switch_import_guide/)
 
 ##### 3.1.1.7 Siflower 其它应用服务介绍
 
@@ -269,9 +269,9 @@ Flash分区：
 |Rootfs|除内核以外的所有openwrt文件系统|
 |Rootfs_data|rootfs_data Jffs2 rw文件系统|
 
-详细介绍参考[FLASH分区开发手册](https://jbctest.github.io/2020/09/08/flashPartitionGuide/)
+详细介绍参考[FLASH分区开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/flashPartitionGuide/)
 
 #### 3.1.3 软件代码获取
 
-siflower SDK代码使用及获取参考[快速入门手册](https://jbctest.github.io/2020/08/05/quick_start/)
+siflower SDK代码使用及获取参考[快速入门手册](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 

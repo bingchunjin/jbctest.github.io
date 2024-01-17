@@ -22,7 +22,7 @@ mermaid: true
 
 ## 开发环境
 
-Siflower代码编译环境，详细见：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+Siflower代码编译环境，详细见：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 开发板调试环境
 
@@ -71,7 +71,7 @@ Siflower 目前Flash系统分区如下：
 
 spl分区是uboot的bootloader，主要用于ddr初始化。spl分区从flash的0地址开始，镜像约22KB，分区最小支持32KB。spl镜像为u-boot-spl.img 。
 **注意：**
-一般spl分区大小为128k，但是实际spl镜像约为22k，后面未使用部分位于0x7000位置存储了一个irom patch，用于irom下载时从此位置读取数据，详细irom patch使用方法参考：[gmac外围芯片对接手册](https://jbctest.github.io/2020/09/11/new_switch_import_guide/)。
+一般spl分区大小为128k，但是实际spl镜像约为22k，后面未使用部分位于0x7000位置存储了一个irom patch，用于irom下载时从此位置读取数据，详细irom patch使用方法参考：[gmac外围芯片对接手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/11/new_switch_import_guide/)。
 
 #### uboot
 
@@ -79,7 +79,7 @@ uboot是用于引导和启动内核程序的bootloader。uboot镜像为uboot.img
 
 #### uboot-env
 
-uboot-env是用于保存uboot使用的环境变量的分区，可以在uboot控制台中通过printenv命令查看其内容。如果uboot的配置固定不需修改，可以去掉该分区。详细的uboot-env内容请参照：[U-boot开发手册](https://jbctest.github.io/2020/09/08/ubootDevelopmentManual/)。
+uboot-env是用于保存uboot使用的环境变量的分区，可以在uboot控制台中通过printenv命令查看其内容。如果uboot的配置固定不需修改，可以去掉该分区。详细的uboot-env内容请参照：[U-boot开发手册](https://bingchunjin.github.io/jbctest.github.io//2020/09/08/ubootDevelopmentManual/)。
 
 #### factory
 
@@ -270,7 +270,7 @@ openwrt分区信息存储在dts中，dts路径为linux-4.14.90-dev/linux-4.14.90
 
 ##### 系统起来之前
 
-通过烧录16M Flash完整镜像更新所有分区，详细见：[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+通过烧录16M Flash完整镜像更新所有分区，详细见：[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
 ##### 系统起来之后
 
@@ -337,16 +337,16 @@ graph TB
 
 ## 调试/新增对应的物料
 
-详细可以参考：[Flash和DDR物料调试指南](https://jbctest.github.io/2020/09/03/ddr_flash/)
+详细可以参考：[Flash和DDR物料调试指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/ddr_flash/)
 
 
 ## 项目引用
 
 ### 参考文档
 
-[快速入门](https://jbctest.github.io/2020/08/05/quick_start/)
+[快速入门](https://bingchunjin.github.io/jbctest.github.io//2020/08/05/quick_start/)
 
-[Flash和DDR物料调试指南](https://jbctest.github.io/2020/09/03/ddr_flash/)
+[Flash和DDR物料调试指南](https://bingchunjin.github.io/jbctest.github.io//2020/09/03/ddr_flash/)
 
 
 ## FAQ
