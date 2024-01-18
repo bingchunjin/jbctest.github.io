@@ -22,6 +22,8 @@ permalink: /categories/
         {% assign displayed_categories = displayed_categories | append: main_category | append: ";" %}
         {% assign subcategories = site.categories[main_category + '/' + category_parts[1]] %}
         {% assign subcategories_test = main_category + '/' + category_parts[1] %}
+        {{ main_category | inspect }}
+        {{ category_parts[1] | inspect }}
         {{ subcategories_test | inspect }}
         {{ subcategories | inspect }}
         {% if subcategories.size > 0 %}
