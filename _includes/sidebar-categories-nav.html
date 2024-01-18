@@ -2,27 +2,28 @@
 <div id="blog-categories">
   <ul class="list-group">
     {% assign sorted_categories = site.categories | sort %}
-    {% assign total_count = 0 %}
+    {% assign total_count_A1 = 0 %}
+    {% assign A1_counted = false %}
 
     {% for category in sorted_categories %}
       {% assign category_id = category | first | split: '/' %}
       {% assign current_first_part = category_id[0] %}
 
-      {% if current_first_part != prev_first_part %}
+      {% if current_first_part == 'A1' and A1_counted == false %}
         <li class="list-group-item">
           <a href="#{{ current_first_part }}">{{ current_first_part }}</a>
+          <span class="badge">{{ total_count_A1 }}</span>
         </li>
-        {% assign total_count = category[1] | size %}
-        {% assign prev_first_part = current_first_part %}
-      {% else %}
-        {% assign total_count = total_count | plus: category[1] | size %}
+        {% assign A1_counted = true %}
       {% endif %}
 
+      {% assign total_count_A1 = total_count_A1 | plus: category[1] | size %}
     {% endfor %}
 
-    {% if total_count > 0 %}
+    {% if total_count_A1 > 0 and A1_counted == false %}
       <li class="list-group-item">
-        <span class="badge">{{ total_count }}</span>
+        <a href="#A1">A1</a>
+        <span class="badge">{{ total_count_A1 }}</span>
       </li>
     {% endif %}
   </ul>
