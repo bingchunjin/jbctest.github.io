@@ -1,7 +1,9 @@
 ---
 layout: post
 title: HNAT介绍
-categories: DEVELOP
+categories:
+	- AC1200
+	- DEVELOP
 description: HNAT介绍
 keywords:  plan
 mermaid: true

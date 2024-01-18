@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 外围switch芯片对接和使用手册
-categories: DEVELOP
+categories:
+	- AC1200
+	- DEVELOP
 description: 外围switch芯片对接和使用手册
 keywords:  plan
 mermaid: true

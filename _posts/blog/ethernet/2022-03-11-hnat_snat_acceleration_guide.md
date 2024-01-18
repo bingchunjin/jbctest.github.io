@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 以太网到WiFi加速流程介绍
-categories: DEVELOP
+categories:
+	- AC1200
+	- DEVELOP
 description: 加速流程
 keywords:  acceleration
 mermaid: true
@@ -37,18 +39,18 @@ Siflower开发环境、siflower芯片开发板或者产品板。
 
 **模块介绍：**
 
-1、2 是基于外围switch的物理Port划分出来的虚拟Interface，分别表示WAN和LAN，由sf_eswitch驱动负责管理控制；  
-3 是矽昌3层硬件转发模块hw nat，简称hnat，由sf_hnat驱动负责管理控制；  
-4 是矽昌千兆MAC，由sf_gmac以太网驱动负责管理控制；  
-5 是mips CPU；  
-6 是wifi模块，由sf_smac驱动负责管理控制；  
+1、2 是基于外围switch的物理Port划分出来的虚拟Interface，分别表示WAN和LAN，由sf_eswitch驱动负责管理控制；
+3 是矽昌3层硬件转发模块hw nat，简称hnat，由sf_hnat驱动负责管理控制；
+4 是矽昌千兆MAC，由sf_gmac以太网驱动负责管理控制；
+5 是mips CPU；
+6 是wifi模块，由sf_smac驱动负责管理控制；
 
 **数据流向：**
 
-LAN -> WIFI数据流向如下：2 -> 4 -> 5 -> 6 （虽然物理上经过模块3，但实际模块3不进行任何数据处理，相当于bypass）  
-WAN -> WIFI数据流向如下：1 -> 3 -> 4 -> 5 -> 6  
-WIFI -> LAN数据流向如下：6->5->4->2  
-WIFI -> WAN数据流向如下：6->5->4->3->1  
+LAN -> WIFI数据流向如下：2 -> 4 -> 5 -> 6 （虽然物理上经过模块3，但实际模块3不进行任何数据处理，相当于bypass）
+WAN -> WIFI数据流向如下：1 -> 3 -> 4 -> 5 -> 6
+WIFI -> LAN数据流向如下：6->5->4->2
+WIFI -> WAN数据流向如下：6->5->4->3->1
 
 ### 4.2 数据转发介绍
 
@@ -60,22 +62,22 @@ LAN到WIFI数据转发为2层数据转发，由CPU负责进行转发，SF19A2890
 
 **流程关键点代码介绍：**
 
-sgmac_rx: sf_gmac驱动代码的sf_gmac.c中，为以太网驱动中断收报处理函数；  
-hook_dev_xmit_path： 内核协议栈net/core/dev.c中，为内核rx报文处理cpu分配之后的早期点；  
+sgmac_rx: sf_gmac驱动代码的sf_gmac.c中，为以太网驱动中断收报处理函数；
+hook_dev_xmit_path： 内核协议栈net/core/dev.c中，为内核rx报文处理cpu分配之后的早期点；
 
 #### 4.2.2 WAN -> WIFI数据转发实现
 
-WAN到WIFI为3层NAT数据转发，此过程会经过以太网硬加速nat转换，整体链路也涉及到以太网驱动和WIFI驱动处理。整体转发流程实现如下：  
+WAN到WIFI为3层NAT数据转发，此过程会经过以太网硬加速nat转换，整体链路也涉及到以太网驱动和WIFI驱动处理。整体转发流程实现如下：
 
 ![accel3](/assets/images/acceleration/accel_3.png)
 
 
 **流程关键点代码介绍：**
 
-硬件打上发送到wifi的特殊vlan tag： 软件自定义vlan tag，目前保留了4000~4015的vlan tag用于标记给wifi的报文；对应代码定义为phnat_priv->wifi_base，保留长度由最大wifi虚拟interface决定，涵盖pppoe情况下最大需要预留vlan tag为16；  
-sgmac_rx: sf_gmac驱动代码的sf_gmac.c中，为以太网驱动中断收报处理函数；  
-wifi_xmit_prepare： 真正实现位于sf_hnat驱动sf_hnat.c中，为以太网给wifi的报文预处理函数；  
-协议栈rps流程： 内核协议栈net/core/dev.c中，为内核rx报文处理cpu分配之后的早期点；  
+硬件打上发送到wifi的特殊vlan tag： 软件自定义vlan tag，目前保留了4000~4015的vlan tag用于标记给wifi的报文；对应代码定义为phnat_priv->wifi_base，保留长度由最大wifi虚拟interface决定，涵盖pppoe情况下最大需要预留vlan tag为16；
+sgmac_rx: sf_gmac驱动代码的sf_gmac.c中，为以太网驱动中断收报处理函数；
+wifi_xmit_prepare： 真正实现位于sf_hnat驱动sf_hnat.c中，为以太网给wifi的报文预处理函数；
+协议栈rps流程： 内核协议栈net/core/dev.c中，为内核rx报文处理cpu分配之后的早期点；
 
 #### 4.2.3 WIFI -> LAN数据转发实现
 

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Siflower路由性能测试手册
-categories: PRODUCE
+categories:
+	- AX3000
+	- PRODUCE
 description: 介绍siflower路由性能测试手册
 keywords: Test
 mermaid: true
@@ -49,8 +51,8 @@ Chariot 由两部分组成：控制端 Console 和远端 Endpoint，两者都可
 
 ### 3.2 IxChariot软件下载
 
-网盘下载地址：  
-链接：https://pan.baidu.com/s/1xMkNt4IWT3JjZdMj5SVuWA  
+网盘下载地址：
+链接：https://pan.baidu.com/s/1xMkNt4IWT3JjZdMj5SVuWA
 密码：w9mx
 
 ### 3.3 IxChariot软件安装
@@ -71,7 +73,7 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 
 ![ixchariot_script](/assets/images/throughput/ixchariot_script.png)
 
-然后点击Run来开始测试。  
+然后点击Run来开始测试。
 点击RUN菜单下的 set run options可以设置测试的时间等其他参数。
 
 ![set_ixchariot_test_time](/assets/images/throughput/set_ixchariot_test_time.png)
@@ -83,7 +85,7 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 补充两点：
 
 - 1.如果点击run 后没有数据参数，请检查endpoint 服务是否开启，可手动重新启动服务。
-  
+
 - 2.无线信号干扰对无线吞吐量测试的影响非常大，避免在无线信号环境复杂的场合做无线测试。
 
 ### 3.5 测试实例
@@ -94,10 +96,10 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 
 ![Eth_Tx_Topology](/assets/images/throughput/Eth_Tx_Topology.png)
 
-测试步骤：  
-(1) 以太网连接路由与PC，路由连接串口工具。  
-(2) 打开IxChariot软件，输入相应的IP地址。  
-(3) 点击Run来进行测试，如下图所示，测试结果为94.623Mbps。  
+测试步骤：
+(1) 以太网连接路由与PC，路由连接串口工具。
+(2) 打开IxChariot软件，输入相应的IP地址。
+(3) 点击Run来进行测试，如下图所示，测试结果为94.623Mbps。
 
 ![Eth_Tx_Result](/assets/images/throughput/Eth_Tx_Result.png)
 
@@ -107,10 +109,10 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 
 ![Eth_Rx_Topology](/assets/images/throughput/Eth_Rx_Topology.png)
 
-测试步骤：  
-(1) 以太网连接路由与PC，路由连接串口工具。  
-(2) 打开IxChariot软件，输入相应的IP地址。  
-(3) 点击Run来进行测试，如下图所示，测试结果为94.741Mbps。  
+测试步骤：
+(1) 以太网连接路由与PC，路由连接串口工具。
+(2) 打开IxChariot软件，输入相应的IP地址。
+(3) 点击Run来进行测试，如下图所示，测试结果为94.741Mbps。
 
 ![Eth_Rx_Result](/assets/images/throughput/Eth_Rx_Result.png)
 
@@ -122,8 +124,8 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 
 测试步骤：
 
-(1) 路由与PC1和PC2均用以太网连接，路由连接串口工具。  
-(2) 打开IxChariot软件，添加两个通道，分别输入相应的IP地址,如图。  
+(1) 路由与PC1和PC2均用以太网连接，路由连接串口工具。
+(2) 打开IxChariot软件，添加两个通道，分别输入相应的IP地址,如图。
 
 ![Eth_Both_Direction_Test](/assets/images/throughput/Eth_Both_Direction_Test.png)
 
@@ -137,11 +139,11 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 
 ![Eth_To_2.4G](/assets/images/throughput/Eth_To_2.4G.png)
 
-测试步骤：  
-(1)PC1以太网连接路由的百兆LAN口，PC2连接路由的2.4Gwifi，路由连接串口工具。  
-(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。  
-(3) 打开IxChariot软件，输入PC1和PC2的IP地址。  
-(4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：83.919Mbps  
+测试步骤：
+(1)PC1以太网连接路由的百兆LAN口，PC2连接路由的2.4Gwifi，路由连接串口工具。
+(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。
+(3) 打开IxChariot软件，输入PC1和PC2的IP地址。
+(4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：83.919Mbps
 
 ![Eth_To_2.4G_Result](/assets/images/throughput/Eth_To_2.4G_Result.png)
 
@@ -152,10 +154,10 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![2.4G_To_Eth_Topology](/assets/images/throughput/2.4G_To_Eth_Topology.png)
 
 测试步骤：
-(1) PC1以太网连接路由的百兆LAN口，PC2连接2.4Gwifi，路由连接串口工具。  
-(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。  
-(3)打开IxChariot软件，输入PC2和PC1的IP地址。  
-(4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：89.153Mbps  
+(1) PC1以太网连接路由的百兆LAN口，PC2连接2.4Gwifi，路由连接串口工具。
+(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。
+(3)打开IxChariot软件，输入PC2和PC1的IP地址。
+(4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：89.153Mbps
 
 ![2.4G_To_Eth_Result](/assets/images/throughput/2.4G_To_Eth_Result.png)
 
@@ -166,10 +168,10 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![2.4G_To_Eth_Topology](/assets/images/throughput/2.4G_To_Eth_Topology.png)
 
 测试步骤：
-(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的2.4G wifi，路由连接串口工具。  
-(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。  
-(3)打开IxChariot软件，输入PC2和PC1的IP地址。  
-(4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：100.577Mbps   
+(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的2.4G wifi，路由连接串口工具。
+(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。
+(3)打开IxChariot软件，输入PC2和PC1的IP地址。
+(4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：100.577Mbps
 
 ![2.4G_To_Gmac_Eth_Result](/assets/images/throughput/2.4G_To_Gmac_Eth_Result.png)
 
@@ -180,9 +182,9 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![GEth_TO_2.4G_pology](/assets/images/throughput/GEth_TO_2.4G_pology.png)
 
 测试步骤：
-(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的2.4G wifi，路由连接串口工具。  
-(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。  
-(3)打开IxChariot软件，输入PC1和PC2的IP地址。  
+(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的2.4G wifi，路由连接串口工具。
+(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。
+(3)打开IxChariot软件，输入PC1和PC2的IP地址。
 (4) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：102.697Mbps
 
 ![GEth_TO_2.4G_pology](/assets/images/throughput/GEth_TO_2.4G_pology.png)
@@ -194,8 +196,8 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![Eth_To_5G](/assets/images/throughput/Eth_To_5G.png)
 
 测试步骤：
-(1) PC1以太网连接路由，PC2连接5Gwifi，路由连接串口工具。  
-(2)打开IxChariot软件，输入PC1和PC2的IP地址。  
+(1) PC1以太网连接路由，PC2连接5Gwifi，路由连接串口工具。
+(2)打开IxChariot软件，输入PC1和PC2的IP地址。
 (3) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：94.059Mbps
 
 ![Eth_To_5G_Result](/assets/images/throughput/Eth_To_5G_Result.png)
@@ -207,8 +209,8 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![5G_To_Eth_pology](/assets/images/throughput/5G_To_Eth_pology.png)
 
 测试步骤：
-(1) PC1以太网连接路由，PC2连接5Gwifi，路由连接串口工具。  
-(2)打开IxChariot软件，输入PC2和PC1的IP地址。  
+(1) PC1以太网连接路由，PC2连接5Gwifi，路由连接串口工具。
+(2)打开IxChariot软件，输入PC2和PC1的IP地址。
 (3) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：92.729Mbps
 
 ![5G_To_Eth_Result](/assets/images/throughput/5G_To_Eth_Result.png)
@@ -220,8 +222,8 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![5G_To_Eth_pology](/assets/images/throughput/5G_To_Eth_pology.png)
 
 测试步骤：
-(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的5G wifi，路由连接串口工具。  
-(2)打开IxChariot软件，输入PC2和PC1的IP地址。  
+(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的5G wifi，路由连接串口工具。
+(2)打开IxChariot软件，输入PC2和PC1的IP地址。
 (3) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：177.335Mbps
 
 ![5G_To_Gmac_Eth_Result](/assets/images/throughput/5G_To_Gmac_Eth_Result.png)
@@ -233,9 +235,9 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![Gmac_Eth_to_5G_pology](/assets/images/throughput/Gmac_Eth_to_5G_pology.png)
 
 测试步骤：
-(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的5G wifi，路由连接串口工具。  
-(2)打开IxChariot软件，输入PC1和PC2的IP地址。  
-(3) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：207.377Mbps  
+(1) PC1以太网连接路由的千兆WAN口，PC2连接路由的5G wifi，路由连接串口工具。
+(2)打开IxChariot软件，输入PC1和PC2的IP地址。
+(3) 点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：207.377Mbps
 
 ![Gmac_Eth_to_5G_Result](/assets/images/throughput/Gmac_Eth_to_5G_Result.png)
 
@@ -246,9 +248,9 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![2.4G_Tx_pology](/assets/images/throughput/2.4G_Tx_pology.png)
 
 测试步骤：
-(1) PC连接2.4Gwifi，路由连接串口工具。  
-(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。  
-(3)打开IxChariot软件，输入路由和PC的IP地址。  
+(1) PC连接2.4Gwifi，路由连接串口工具。
+(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。
+(3)打开IxChariot软件，输入路由和PC的IP地址。
 (4)点击Run来进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：79.485Mbps
 
 ![2.4G_Tx_Result](/assets/images/throughput/2.4G_Tx_Result.png)
@@ -258,9 +260,9 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![2.4G_Rx_pology](/assets/images/throughput/2.4G_Rx_pology.png)
 
 测试步骤：
-(1) PC连接2.4Gwifi，路由连接串口工具。  
-(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。  
-(3)打开IxChariot软件，输入PC和路由的IP地址。  
+(1) PC连接2.4Gwifi，路由连接串口工具。
+(2)登录路由网页设置页面，将2.4Gwifi 频宽设置为40MHz。
+(3)打开IxChariot软件，输入PC和路由的IP地址。
 (4) 点击Run来进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：86.058Mbps
 
 ![2.4G_Rx_Result](/assets/images/throughput/2.4G_Rx_Result.png)
@@ -270,8 +272,8 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 ![5G_Tx_pology](/assets/images/throughput/5G_Tx_pology.png)
 
 测试步骤：
-(1) PC连接5Gwifi，路由连接串口工具。  
-(2)打开IxChariot软件，输入路由和PC的IP地址。  
+(1) PC连接5Gwifi，路由连接串口工具。
+(2)打开IxChariot软件，输入路由和PC的IP地址。
 (3)点击Run来进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：81.045Mbps
 
 ![5G_Tx_Result](/assets/images/throughput/5G_Tx_Result.png)
@@ -280,10 +282,10 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 
 ![5G_Rx_pology](/assets/images/throughput/5G_Rx_pology.png)
 
-测试步骤：  
-(1) PC连接5Gwifi，路由连接串口工具。  
-(2)打开IxChariot软件，输入PC和路由的IP地址。  
-(3)点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：108.161Mbps  
+测试步骤：
+(1) PC连接5Gwifi，路由连接串口工具。
+(2)打开IxChariot软件，输入PC和路由的IP地址。
+(3)点击Run进行测试，路由串口界面输入top命令获取CPU占比。如下图所示，测试结果：108.161Mbps
 
 ![5G_Rx_Result](/assets/images/throughput/5G_Rx_Result.png)
 
@@ -293,24 +295,24 @@ IxChariot软件安装分为软件Console端安装及Endpoint端安装。
 Iperf是由NLANRDAST开发作为一个现代的替代测量最大TCP和UDP带宽性能。iperf可以调整各种参数和UDP特性。iperf报告带宽，时延抖动，数据包丢失。是一个TCP/IP和UDP/IP的性能测量工具，能够提供网络吞吐率信息，以及震动、丢包率、最大段和最大传输单元大小等统计信息；从而能够帮助我们测试网络性能，定位网络问题。
 
 ### 4.2 Iperf软件下载
-iperf 软件下载地址  
-链接：https://pan.baidu.com/s/14JIFue9ct6NVa6Hd1lu21g  
+iperf 软件下载地址
+链接：https://pan.baidu.com/s/14JIFue9ct6NVa6Hd1lu21g
 提取码：3snr
 
 ### 4.3 Iperf软件常用参数说明
--s 以server模式启动，如：iperf -s  
--c host以client模式启动，host是server端地址，如：iperf -c 222.35.11.23  
+-s 以server模式启动，如：iperf -s
+-c host以client模式启动，host是server端地址，如：iperf -c 222.35.11.23
 
 通用参数
--i 以秒为单位显示报告间隔，如：iperf -c 192.168.5.1 -i 2  
--l 缓冲区大小，默认是8KB, 如：iperf -c 192.168.5.1 -l 16  
--p 指定服务器端使用的端口或客户端所连接的端口，如：iperf -s -p 9999; iperf -c 192.168.5.1 -p 9999  
--u 使用udp协议  
+-i 以秒为单位显示报告间隔，如：iperf -c 192.168.5.1 -i 2
+-l 缓冲区大小，默认是8KB, 如：iperf -c 192.168.5.1 -l 16
+-p 指定服务器端使用的端口或客户端所连接的端口，如：iperf -s -p 9999; iperf -c 192.168.5.1 -p 9999
+-u 使用udp协议
 -w 指定TCP窗口大小，默认是8KB
 
-Client端专用参数  
--d 同时进行双向传输测试  
--t 测试时间，默认10秒, 如：iperf -c 192.168.5.1 -t 5  
+Client端专用参数
+-d 同时进行双向传输测试
+-t 测试时间，默认10秒, 如：iperf -c 192.168.5.1 -t 5
 
 ### 4.4 Iperf软件使用
 
@@ -322,9 +324,9 @@ Client端专用参数
 
 测试步骤：
 
-(1)PC以太网连接路由，PC装有IPerf，路由连接串口工具  
-(2)PC作为Server端，打开终端进到iperf软件所在目录下。路由作为Client端.  
-(3)参数说明如下：  
+(1)PC以太网连接路由，PC装有IPerf，路由连接串口工具
+(2)PC作为Server端，打开终端进到iperf软件所在目录下。路由作为Client端.
+(3)参数说明如下：
 - TCP测试参数说明：
 - Server端参数是“iperf –s –i 1 -w 2M”；
 - Client端参数是“iperf –c Server端IP -i 1 –t 120 -w 2M ”
@@ -344,8 +346,8 @@ Client端专用参数
 
 测试步骤：
 
-(1)PC以太网连接路由，PC装有IPerf，路由连接串口工具。  
-(2)PC作为Client端，打开终端进到iperf软件所在目录下，路由作为Server端  
+(1)PC以太网连接路由，PC装有IPerf，路由连接串口工具。
+(2)PC作为Client端，打开终端进到iperf软件所在目录下，路由作为Server端
 (3)参数说明如下：
 - TCP测试参数说明：
 - Server端参数是“iperf –s –i 1 -w 2M”；
@@ -366,9 +368,9 @@ Client端专用参数
 
 测试步骤：
 
-(1)PC以太网连接路由，PC装有IPerf，路由连接串口工具。  
-(2)PC端打开终端进到iperf软件所在目录下。  
-(3)参数说明如下：  
+(1)PC以太网连接路由，PC装有IPerf，路由连接串口工具。
+(2)PC端打开终端进到iperf软件所在目录下。
+(3)参数说明如下：
 - TCP测试参数说明：
 - PC端参数是“iperf –s –i 1 -w 2M”；
 - 路由器参数是“iperf –c PC的IP -i 1 –t 120 -w 2M -d”
@@ -388,9 +390,9 @@ Client端专用参数
 
 测试步骤：
 
-(1)PC连接路由WIFI，PC上装有Iperf，路由连接串口工具。  
-(2)PC端打开终端进到iperf软件所在目录下。  
-(3)参数说明如下  
+(1)PC连接路由WIFI，PC上装有Iperf，路由连接串口工具。
+(2)PC端打开终端进到iperf软件所在目录下。
+(3)参数说明如下
 - TCP测试参数说明：
 - Server端参数是“iperf -s –l 32k”；
 - Client端参数是“iperf –c Server端IP -i 1 –t 120 –l 32k –P 2 ” ；
@@ -410,9 +412,9 @@ Client端专用参数
 
 测试步骤：
 
-(1)PC连接路由WIFI，PC上装有Iperf，路由连接串口工具。  
-(2)PC端打开终端进到iperf软件所在目录下。  
-(3)参数说明如下  
+(1)PC连接路由WIFI，PC上装有Iperf，路由连接串口工具。
+(2)PC端打开终端进到iperf软件所在目录下。
+(3)参数说明如下
 - TCP测试参数说明：
 - Server端参数是“iperf -s –l 32k”；
 - Client端参数是“iperf –c Server端IP -i 1 –t 120 –l 32k –P 2 ” ；
@@ -430,9 +432,9 @@ Client端专用参数
 
 ![wifi_TRX](/assets/images/throughput/wifi_TRX.png)
 
-(1)PC连接路由wifi 2.4G或5G，PC上装有Iperf，路由连接串口工具。  
-(2)PC端打开终端进到iperf软件所在目录下。  
-(3)参数说明如下  
+(1)PC连接路由wifi 2.4G或5G，PC上装有Iperf，路由连接串口工具。
+(2)PC端打开终端进到iperf软件所在目录下。
+(3)参数说明如下
 - TCP测试参数说明：
 - PC端参数是“iperf -s –l 32k”；
 - 路由端参数是“iperf –c PC端IP -i 1 –t 120 –l 32k –d ” ；
@@ -447,8 +449,8 @@ Client端专用参数
 ## 5 附注
 
 ### 5.1 WinSCP安装
-WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端。同时支持 SCP 协议。它的主要功能是在本地与远程计算机间安全地复制文件，并且可以直接编辑文件。  
-可在官网上进行下载，官网地址：https://winscp.net/eng/docs/lang:chs。安装过程中一路点击“下一步”即可。  
+WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端。同时支持 SCP 协议。它的主要功能是在本地与远程计算机间安全地复制文件，并且可以直接编辑文件。
+可在官网上进行下载，官网地址：https://winscp.net/eng/docs/lang:chs。安装过程中一路点击“下一步”即可。
 打开桌面winSCP快捷图标进行设置，将文件协议修改为SCP，输入路由的地址( 默认是192.168.4.1 )及用户名和密码（ 用户名和密码均为admin ）。如图所示。
 
 ![winSCP](/assets/images/throughput/winSCP.png)

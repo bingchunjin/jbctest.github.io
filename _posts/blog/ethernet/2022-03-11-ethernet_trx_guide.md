@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 以太网收发包接口说明手册
-categories: DEVELOP
+categories:
+	- AC1200
+	- DEVELOP
 description: 以太网收发包
 keywords:  eth trx
 mermaid: true
@@ -84,9 +86,9 @@ GMAC的功能被划分成下面几个类别
         Flow control using backpressure support (基于 implementation-specific white papers and UNH Ethernet Clause 4 MAC Test Suite - Annex D)
         - 半双工千兆模式下帧突发和帧拓展
 
-    - 发送中前导和帧数据起点（SFD）插入            
+    - 发送中前导和帧数据起点（SFD）插入
 
-    - 接受中前导和帧数据起点（SFD）删除            
+    - 接受中前导和帧数据起点（SFD）删除
 
     - 基于每一帧进行自动CRC校验和数据填充控制
 
@@ -168,7 +170,7 @@ GMAC的功能被划分成下面几个类别
 - 收发层（MTL）
 
    MTK模块由两组fifo组成，带有可编辑阈值的发送fifo，和带有可编辑阈值的接收fifo（默认64 byte）。
-   
+
    MTL层支持下面功能：
 
     - 64位的收发模块（将应用层和GMAC-CORE连接在一起）
@@ -211,7 +213,7 @@ GMAC的功能被划分成下面几个类别
 
 ### 3.2 Linux网络堆栈的高级视图
 
-Linux将内核空间的网络级别划分为4个子层。 
+Linux将内核空间的网络级别划分为4个子层。
 
 Linux网络子系统的顶部是Linux系统调用接口层。
 
@@ -310,7 +312,7 @@ static const struct net_device_ops sgmac_netdev_ops = {
 
 ![gmac4_2.png](/assets/images/eth_trx_image/gmac4_2.png)
 
-### 4.6 描述符 
+### 4.6 描述符
 
 GMAC支持描述符的环和链结构，而在驱动程序中，我们选择描述符的环模式。 我们提供了Both发送器和Received描述符队列，每个队列都包含64个描述符。 要更改描述符的数量，请相应地更改sgmac.c文件以进行以下操作。
 
@@ -333,7 +335,7 @@ GMAC支持以下两种类型的描述符：普通描述符和增强描述符。 
 
 #### 4.6.3 发送描述符
 
-发送描述符结构如图3所示。设备驱动程序必须在描述符初始化期间对控制位TDES0 [31:18]进行编程。 当DMA更新描述符时，它将回写除OWN位（它清除）之外的所有控制位并更新状态位[7：0]。  
+发送描述符结构如图3所示。设备驱动程序必须在描述符初始化期间对控制位TDES0 [31:18]进行编程。 当DMA更新描述符时，它将回写除OWN位（它清除）之外的所有控制位并更新状态位[7：0]。
 通过提前支持时间戳，可以通过设置TDES0的位25（TTSE）为给定帧启用时间戳的快照。 当描述符关闭时（也就是说，当OWN位被清除时），时间戳被写入TDES6和TDES7。 这由TDES0的状态位17（TTSS）指示。
 
 ![gmac6.png](/assets/images/eth_trx_image/gmac6.png)
@@ -365,7 +367,7 @@ make clean
 9. 驱动调用napi，开始轮询（poll），从ring buffer收包
 10. 这些数据包以skb的形式传入更上层的协议栈。
 11. 协议栈处理包，将他们传入socket接收队列
-    
+
 ![收包1.png](/assets/images/eth_trx_image/tx1.png)
 
 ![收包2.png](/assets/images/eth_trx_image/tx2.png)
@@ -469,7 +471,7 @@ sgmac_xmit（）:
             ->raise_softirq_irqoff（NET_TX_SOFTIRQ）调用了一个值为NET_TX_SOFTIRQ的一个中断函数
                 ->net_tx_action
                     ->completion_queue  while 循环将遍历这个列表并__kfree_skb 释放每个 skb 占 用的内存
-                    ->output queue 
+                    ->output queue
                         ->tx_map
                             ->...netdev_tx_sent_queue  到此发送完成
 ```
