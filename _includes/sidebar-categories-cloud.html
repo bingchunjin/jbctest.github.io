@@ -34,10 +34,11 @@
     {% assign color = 8 | minus: base %}
   {% endif %}
   {% assign category_id = category | first | split: '/' %}
+  {{ category_id | inspect }}
   {% assign current_first_part = category_id[0] %}
 
   {% if current_first_part != prev_first_part %}
-  	<a href="{{ site.url }}/categories/#{{ current_first_part }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ current_first_part | first }}</a>
+  	<a href="{{ site.url }}/categories/#{{ current_first_part }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ current_first_part }}</a>
   {% endif %}
 {% endfor %}
 
