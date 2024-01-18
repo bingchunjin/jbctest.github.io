@@ -10,6 +10,7 @@ permalink: /categories/
 
 <section class="container posts-content">
   {% assign sorted_categories = site.categories | sort %}
+  {{ site.categories | inspect }}
   {% for category in sorted_categories %}
     {% assign category_parts = category | first | split: '/' %}
 
