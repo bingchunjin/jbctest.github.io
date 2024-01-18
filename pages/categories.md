@@ -22,13 +22,11 @@ permalink: /categories/
         {% assign displayed_categories = displayed_categories | append: main_category | append: ";" %}
         {% assign subcategories_test = main_category | append: '/' | append: category_parts[1] | strip %}
         {% assign subcategories = site.categories[subcategories_test] %}
-        {{ main_category | inspect }}
-        {{ category_parts[1] | inspect }}
-        {{ subcategories_test | inspect }}
-        {{ subcategories | inspect }}
+        {{ subcategories.size | inspect }}
         {% if subcategories.size > 0 %}
           {% for subcategory in subcategories %}
             {% assign subcategory_parts = subcategory | first | split: '/' %}
+            {{ subcategory_parts | inspect }}
             {% if subcategory_parts.size == 1 %}
               <!-- 二级分类 B -->
               <h4>{{ subcategory_parts[0] }}</h4>
