@@ -10,17 +10,20 @@
 
       {% unless first_level_categories contains current_first_part %}
         {% assign first_level_categories = first_level_categories | append: current_first_part | append: ',' %}
+        
+        {% assign total_count = 0 %}
+        {% for subcategory in site.categories[current_first_part] %}
+          {% assign total_count = total_count | plus: subcategory[1] | size %}
+        {% endfor %}
+
         <li class="list-group-item">
           <a href="#{{ current_first_part }}">{{ current_first_part }}</a>
-          <span class="badge">{{ category[1] | size }}</span>
+          <span class="badge">{{ total_count }}</span>
         </li>
       {% endunless %}
     {% endfor %}
   </ul>
 </div>
-
-
-
 
 
 <script type="text/javascript">
