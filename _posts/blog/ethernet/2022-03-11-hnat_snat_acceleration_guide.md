@@ -2,8 +2,8 @@
 layout: post
 title: 以太网到WiFi加速流程介绍
 categories:
-	- AC1200
-	- AC1200/DEVELOP
+ - AC1200
+ - AC1200/DEVELOP
 description: 加速流程
 keywords:  acceleration
 mermaid: true

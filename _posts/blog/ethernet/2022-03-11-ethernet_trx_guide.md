@@ -2,8 +2,8 @@
 layout: post
 title: 以太网收发包接口说明手册
 categories:
-	- AC1200
-	- AC1200/DEVELOP
+ - AC1200
+ - AC1200/DEVELOP
 description: 以太网收发包
 keywords:  eth trx
 mermaid: true
