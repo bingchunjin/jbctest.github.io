@@ -17,7 +17,7 @@ permalink: /categories/
     {% assign current_first_part = category_id[0] %}
 
     {% if current_first_part != prev_first_part %}
-      <h2>{{ current_first_part }}</h2>
+      <h2>{{ id="current_first_part" }}</h2>
       {% assign prev_first_part = current_first_part %}
     {% endif %}
 
