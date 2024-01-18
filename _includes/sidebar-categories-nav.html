@@ -11,11 +11,15 @@
       {% unless first_level_categories contains current_first_part %}
         {% assign first_level_categories = first_level_categories | append: current_first_part | append: ',' %}
         
-        {% assign subcategories = site.categories[current_first_part] %}
         {% assign total_count = 0 %}
         
-        {% for subcategory in subcategories %}
-          {% assign total_count = total_count | plus: subcategory[1] | size %}
+        {% for subcategory in sorted_categories %}
+          {% assign subcategory_id = subcategory | first | split: '/' %}
+          {% assign subcategory_first_part = subcategory_id[0] %}
+          
+          {% if subcategory_first_part == current_first_part %}
+            {% assign total_count = total_count | plus: subcategory[1] | size %}
+          {% endif %}
         {% endfor %}
 
         <li class="list-group-item">
@@ -26,6 +30,7 @@
     {% endfor %}
   </ul>
 </div>
+
 
 
 
