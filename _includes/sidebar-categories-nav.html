@@ -11,8 +11,10 @@
       {% unless first_level_categories contains current_first_part %}
         {% assign first_level_categories = first_level_categories | append: current_first_part | append: ',' %}
         
+        {% assign subcategories = site.categories[current_first_part] %}
         {% assign total_count = 0 %}
-        {% for subcategory in site.categories[current_first_part] %}
+        
+        {% for subcategory in subcategories %}
           {% assign total_count = total_count | plus: subcategory[1] | size %}
         {% endfor %}
 
@@ -24,6 +26,7 @@
     {% endfor %}
   </ul>
 </div>
+
 
 
 <script type="text/javascript">
