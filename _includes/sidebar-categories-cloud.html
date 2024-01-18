@@ -18,7 +18,7 @@
 {% assign prev_first_part = "" %}
 
 {% for category in site.categories %}
-  {% assign temp = category[1].size | plus: 0 | minus: min | times: 36 | divided_by: diff %}
+  {% assign temp = category[1].size | minus: min | times: 36 | divided_by: diff %}
   {% assign base = temp | divided_by: 4 %}
   {% assign remain = temp | modulo: 4 %}
   {% if remain == 0 %}
@@ -35,17 +35,10 @@
   {% endif %}
   {% assign category_id = category | first | split: '/' %}
   {% assign current_first_part = category_id[0] %}
-
-    {% assign current_first_part_trimmed = current_first_part | strip %}
-{% assign prev_first_part_trimmed = prev_first_part | strip %}
-
-{% if current_first_part_trimmed != prev_first_part_trimmed %}
-  {% assign prev_first_part = current_first_part %}
-  {{ prev_first_part | inspect }}
-  {{ current_first_part | inspect }}
-  <a href="{{ site.url }}/categories/#{{ current_first_part_trimmed }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ current_first_part }}</a>
-{% endif %}
-
+  {% if current_first_part != prev_first_part %}
+  	{% assign prev_first_part = current_first_part %}
+  	<a href="{{ site.url }}/categories/#{{ current_first_part }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ current_first_part }}</a>
+  {% endif %}
 {% endfor %}
 
 <!-- ref http://liberize.github.io/tech/jekyll-tag-cloud.html -->
