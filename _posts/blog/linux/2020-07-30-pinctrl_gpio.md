@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Pinctrl 和 GPIO 使用手册
-categories: AC1200/LINUX
+categories:
+ - AC1200
+ - AC1200/DEMOLINUX
 description: Pinctrl 和 GPIO 使用手册
 keywords: 文档开发
 mermaid: true

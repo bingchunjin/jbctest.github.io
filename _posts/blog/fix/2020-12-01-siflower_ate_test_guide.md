@@ -1,7 +1,9 @@
 ---
 layout: post
 title: SIFLOWER射频测试手册
-categories: AC1200/PRODUCE
+categories:
+ - AC1200
+ - AC1200/DEMOPRODUCE
 description: 介绍SIFLOWER方案手动及ATE工具射频测试
 keywords: ate_cmd test
 mermaid: true

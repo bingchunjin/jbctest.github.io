@@ -1,7 +1,9 @@
 ---
 layout: post
 title: ko自动更新流程介绍
-categories: AC1200/CUSTOM
+categories:
+ - AC1200
+ - AC1200/DEMOCUSTOM
 description: 介绍Siflower Pubic/UI-source-code ko自动更新流程
 keywords: openwrt ko更新
 mermaid: false

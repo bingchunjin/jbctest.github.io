@@ -1,7 +1,9 @@
 ---
 layout: post
 title: SPI Nand Flash物料调试指南
-categories: AX3000/LINUX
+categories:
+ - AX3000
+ - AX3000/DEMOLINUX
 description: 介绍如何调试spi nand flash
 keywords: 文档开发
 mermaid: true

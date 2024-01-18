@@ -1,7 +1,9 @@
 ---
 layout: post
 title: U-boot移植应用开发手册
-categories: AX3000/SYSTEM
+categories:
+ - AX3000
+ - AX3000/DEMOSYSTEM
 description: 介绍了Uboot结构和使用方法
 keywords: Uboot SPL 烧录
 mermaid: true

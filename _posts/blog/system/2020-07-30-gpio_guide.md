@@ -1,7 +1,9 @@
 ---
 layout: post
 title: gpio综合使用手册
-categories: AC1200/SYSTEM
+categories:
+ - AC1200
+ - AC1200/DEMOSYSTEM
 description: 介绍如何使用gpio配置led或者button
 keywords: gpio led button
 mermaid: true

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Siflower路由性能测试手册
-categories: AX3000/PRODUCE
+categories:
+ - AX3000
+ - AX3000/DEMOPRODUCE
 description: 介绍siflower路由性能测试手册
 keywords: Test
 mermaid: true

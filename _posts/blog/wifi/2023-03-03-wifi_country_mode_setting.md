@@ -1,7 +1,9 @@
 ---
 layout: post
 title: WiFi国家码设置与修改
-categories: AC1200/WIFI
+categories:
+ - AC1200
+ - AC1200/DEMOWIFI
 description: 介绍WiFi国家码设置与修改
 keywords: wifi country mode
 mermaid: true

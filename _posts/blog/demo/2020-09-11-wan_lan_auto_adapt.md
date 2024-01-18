@@ -1,7 +1,9 @@
 ---
 layout: post
 title: wan-lan自适应开发手册
-categories: AC1200/DEMO
+categories:
+ - AC1200
+ - AC1200/DEMO
 description: 脚本开发，实现开机自动配置wan/lan
 keywords: 自适应
 mermaid: true

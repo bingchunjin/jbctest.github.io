@@ -1,7 +1,9 @@
 ---
 layout: post
 title: wifi架构和配置手册
-categories: AX3000/WIFI
+categories:
+ - AX3000
+ - AX3000/DEMOWIFI
 description: 介绍wifi架构和配置
 keywords: wifi
 mermaid: true

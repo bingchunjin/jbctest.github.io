@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 虚拟机安装及编译环境配置手册
-categories: AC1200/SYSTEM
+categories:
+ - AC1200
+ - AC1200/DEMOSYSTEM
 description: 介绍如何安装虚拟机、ubuntu以及配置开发环境
 keywords: ubuntu 开发环境
 mermaid: false

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: SIFLOWER校准方案说明手册
-categories: AX3000/PRODUCE
+categories:
+ - AX3000
+ - AX3000/DEMOPRODUCE
 description: 介绍SIFLOWER校准方案
 keywords: calibration
 mermaid: true

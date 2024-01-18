@@ -1,7 +1,9 @@
 ---
 layout: post
 title: WDS开发及使用手册
-categories: AX3000/WIFI
+categories:
+ - AX3000
+ - AX3000/DEMOWIFI
 description: 介绍WDS开发及使用
 keywords: wifi wds
 mermaid: true

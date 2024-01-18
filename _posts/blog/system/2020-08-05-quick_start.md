@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 快速入门手册
-categories: AC1200/SYSTEM
+categories:
+ - AC1200
+ - AC1200/DEMOSYSTEM
 description: 介绍siflower平台快速入门的方法
 keywords:  快速入门
 mermaid: true
