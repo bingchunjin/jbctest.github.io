@@ -34,7 +34,6 @@
     {% assign color = 8 | minus: base %}
   {% endif %}
   {% assign category_id = category | first | split: '/' %}
-  {{ category_id | inspect }}
   {% assign current_first_part = category_id[0] %}
 
   {% if current_first_part != prev_first_part %}
