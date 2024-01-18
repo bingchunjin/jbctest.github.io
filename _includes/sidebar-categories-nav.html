@@ -7,22 +7,18 @@
     {% for category in sorted_categories %}
       {% assign category_id = category | first | split: '/' %}
       {% assign current_first_part = category_id[0] %}
-      {{ current_first_part | inspect }}
 
       {% unless first_level_categories contains current_first_part %}
         {% assign first_level_categories = first_level_categories | append: current_first_part | append: ',' %}
         
         {% assign total_count = 0 %}
         
-        {% for subcategory in sorted_categories %}
-          {% assign subcategory_id = subcategory | first | split: '/' %}
-          {{ subcategory_id | inspect }}
-          {% assign subcategory_first_part = subcategory_id[0] %}
-          {{ subcategory_first_part | inspect }}
+        {% for post in site.posts %}
+          {% assign post_category_id = post.categories.first | split: '/' %}
+          {% assign post_first_part = post_category_id[0] %}
           
-          {% if subcategory_first_part == current_first_part %}
-            {% assign total_count = total_count | plus: subcategory[1] | size %}
-            {{ total_count | inspect }}
+          {% if post_first_part == current_first_part %}
+            {% assign total_count = total_count | plus: 1 %}
           {% endif %}
         {% endfor %}
 
