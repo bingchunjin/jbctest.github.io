@@ -9,20 +9,29 @@ permalink: /categories/
 ---
 
 <section class="container posts-content">
-{% assign sorted_categories = site.categories | sort %}
-{% for category in sorted_categories %}
-{% assign category_id = category | first | split: '/' %}
-<h2>{{ category_id[0] }}</h2>
-<h4>{{ category_id[1] }}</h4>
-<ol class="posts-list">
-{% for post in category.last %}
-<li class="posts-list-item">
-<span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
-<a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-</li>
-{% endfor %}
-</ol>
-{% endfor %}
+  {% assign sorted_categories = site.categories | sort %}
+  {% assign prev_first_part = "" %}
+
+  {% for category in sorted_categories %}
+    {% assign category_id = category | first | split: '/' %}
+    {% assign current_first_part = category_id[0] %}
+
+    {% if current_first_part != prev_first_part %}
+      <h2>{{ current_first_part }}</h2>
+      {% assign prev_first_part = current_first_part %}
+    {% endif %}
+
+    <h4>{{ category_id[1] }}</h4>
+    <ol class="posts-list">
+      {% for post in category.last %}
+        <li class="posts-list-item">
+          <span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
+          <a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ol>
+  {% endfor %}
 </section>
+
 <!-- /section.content -->
 
