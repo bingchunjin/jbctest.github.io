@@ -20,8 +20,8 @@ permalink: /categories/
         <!-- 一级分类 A -->
         <h3>{{ main_category }}</h3>
         {% assign displayed_categories = displayed_categories | append: main_category | append: ";" %}
-        {% assign subcategories = site.categories[main_category + '/' + category_parts[1]] %}
         {% assign subcategories_test = main_category | append: '/' | append: category_parts[1] | strip %}
+        {% assign subcategories = site.categories[assign subcategories_test] %}
         {{ main_category | inspect }}
         {{ category_parts[1] | inspect }}
         {{ subcategories_test | inspect }}
