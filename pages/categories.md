@@ -21,7 +21,7 @@ permalink: /categories/
         <h3>{{ main_category }}</h3>
         {% assign displayed_categories = displayed_categories | append: main_category | append: ";" %}
         {% assign subcategories_test = main_category | append: '/' | append: category_parts[1] | strip %}
-        {% assign subcategories = site.categories[assign subcategories_test] %}
+        {% assign subcategories = site.categories[subcategories_test] %}
         {{ main_category | inspect }}
         {{ category_parts[1] | inspect }}
         {{ subcategories_test | inspect }}
