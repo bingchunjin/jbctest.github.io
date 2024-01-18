@@ -1,30 +1,11 @@
-
 <h3>Blog Categories</h3>
 <div id="blog-categories">
   <ul class="list-group">
     {% assign sorted_categories = site.categories | sort %}
-    {% assign prev_first_part = "" %}
     {% assign total_count = 0 %}
 
     {% for category in sorted_categories %}
-      {% assign category_id = category | first | split: '/' %}
-      {% assign current_first_part = category_id[0] %}
-
-      {% if current_first_part != prev_first_part %}
-        {% if total_count > 0 %}
-          <li class="list-group-item">
-            <span class="badge">{{ total_count }}</span>
-          </li>
-        {% endif %}
-        <li class="list-group-item">
-          <a href="#{{ current_first_part }}">{{ current_first_part }}</a>
-          <span class="badge">{{ category[1].size }}</span>
-          {% assign total_count = category[1].size %}
-        </li>
-        {% assign prev_first_part = current_first_part %}
-      {% else %}
-        {% assign total_count = total_count | plus: category[1].size %}
-      {% endif %}
+      {% assign total_count = total_count | plus: category[1] | size %}
     {% endfor %}
 
     {% if total_count > 0 %}
@@ -34,6 +15,7 @@
     {% endif %}
   </ul>
 </div>
+
 
 <script type="text/javascript">
 
