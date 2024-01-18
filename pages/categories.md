@@ -17,8 +17,10 @@ permalink: /categories/
       <!-- 一级分类 -->
       <h3>{{ category_parts[0] }}</h3>
       {% assign subcategories = site.categories[category_parts[0]] %}
+      {{ subcategories.size | inspect }}
       {% if subcategories.size > 0 %}
         {% for subcategory in subcategories %}
+         {{ subcategory | inspect }}
           {% assign subcategory_parts = subcategory | first | split: '/' %}
           <h4>{{ subcategory_parts[1] }}</h4>
           <ol class="posts-list">
