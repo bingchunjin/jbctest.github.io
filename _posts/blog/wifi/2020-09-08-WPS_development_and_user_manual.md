@@ -1,9 +1,7 @@
 ---
 layout: post
 title: WPS开发及使用手册
-categories:
- - AC1200
- - AC1200/DEMOWIFI
+categories: AC1200/WIFI
 description: 介绍WPS开发及使用
 keywords: wifi wps
 mermaid: true

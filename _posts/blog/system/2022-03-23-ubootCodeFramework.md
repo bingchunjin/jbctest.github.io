@@ -1,9 +1,7 @@
 ---
 layout: post
 title: U-boot代码框架介绍
-categories:
- - AX3000
- - AX3000/DEMOSYSTEM
+categories: AX3000/SYSTEM
 description: 介绍了Uboot代码框架
 keywords: Uboot SPL 代码框架
 mermaid: true

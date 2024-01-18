@@ -12,9 +12,7 @@ permalink: /categories/
   {% assign sorted_categories = site.categories | sort %}
   {% for category in sorted_categories %}
     {% assign category_parts = category | first | split: '/' %}
-    {{ category | inspect }}
-    {{ category_parts | inspect }}
-    {% if category_parts.size == 1 %}
+    {% if category_parts.size == 2 %}
       <!-- 一级分类 -->
       <h3>{{ category_parts[0] }}</h3>
       {% assign subcategories = site.categories[category_parts[0] + '/' + category_parts[1]] %}

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Linux DTS说明文档
-categories:
- - AX3000
- - AX3000/DEMOLINUX
+categories: AX3000/LINUX
 description: Linux DTS说明文档
 keywords: 文档开发
 mermaid: true

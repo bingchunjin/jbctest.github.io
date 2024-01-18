@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Siflower软件服务介绍
-categories:
- - AC1200
- - AC1200/DEMOSYSTEM
+categories: AC1200/SYSTEM
 description: 介绍Siflower方案软件架构和功能
 keywords:  siwifi openwrt
 mermaid: true

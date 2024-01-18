@@ -1,9 +1,7 @@
 ---
 layout: post
 title: SF19A2890 CPU时钟设置介绍
-categories:
- - AC1200
- - AC1200/DEMOLINUX
+categories: AC1200/LINUX
 description: 介绍如何设置CPU时钟
 keywords: 文档开发
 mermaid: true

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 中继器配置相关说明
-categories:
- - AX3000
- - AX3000/DEMOSYSTEM
+categories: AX3000/SYSTEM
 description: 介绍了中继器各个模式配置
 keywords: 中继器 模式 说明
 mermaid: true

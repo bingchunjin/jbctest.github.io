@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 以太网WAN-LAN划分指南
-categories:
- - AC1200
- - AC1200/DEMODEVELOP
+categories: AC1200/DEVELOP
 description: 以太网WAN-LAN划分指南
 keywords:  plan
 mermaid: true

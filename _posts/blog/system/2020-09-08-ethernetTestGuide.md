@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 以太网测试介绍
-categories:
- - AC1200
- - AC1200/DEMOSYSTEM
+categories: AC1200/SYSTEM
 description: 介绍如何进行以太网测试
 keywords: 以太网 测试
 mermaid: true

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: SIFLOWER ATETOOL使用手册
-categories:
- - AC1200
- - AC1200/DEMOPRODUCE
+categories: AC1200/RODUCE
 description: 介绍SIFLOWER方案ATE自动测试工具使用
 keywords: ate_cmd test
 mermaid: true

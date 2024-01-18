@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 新的版型引入指南
-categories:
- - AX3000
- - AX3000/DEMOSYSTEM
+categories: AX3000/SYSTEM
 description: 介绍了如何添加新板型
 keywords: 板型 配置 编译
 mermaid: true

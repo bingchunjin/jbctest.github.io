@@ -1,9 +1,7 @@
 ---
 layout: post
 title: UART 驱动开发手册
-categories:
- - AC1200
- - AC1200/DEMOLINUX
+categories: AC1200/LINUX
 description: UART 驱动开发手册
 keywords: 文档开发
 mermaid: true
