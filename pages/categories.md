@@ -9,40 +9,20 @@ permalink: /categories/
 ---
 
 <section class="container posts-content">
-  {% assign sorted_categories = site.categories | sort %}
-  {% assign displayed_categories = "" %}
-  {% for category in sorted_categories %}
-    {% assign category_parts = category | first | split: '/' %}
-    
-    {% if category_parts.size == 2 %}
-      {% assign main_category = category_parts[0] %}
-      {% unless displayed_categories contains main_category %}
-        <!-- 一级分类 A -->
-        <h3>{{ main_category }}</h3>
-        {% assign displayed_categories = displayed_categories | append: main_category | append: ";" %}
-        {% assign subcategories_test = main_category | append: '/' | append: category_parts[1] | strip %}
-        {% assign subcategories = site.categories[subcategories_test] %}
-        {{ subcategories.size | inspect }}
-        {% if subcategories.size > 0 %}
-          {% for subcategory in subcategories %}
-            {% assign subcategory_parts = subcategory | first | split: '/' %}
-            {{ subcategory_parts | inspect }}
-            {% if subcategory_parts.size == 1 %}
-              <!-- 二级分类 B -->
-              <h4>{{ subcategory_parts[0] }}</h4>
-              <ol class="posts-list">
-                {% for post in subcategory.last %}
-                  <li class="posts-list-item">
-                    <span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
-                    <a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                  </li>
-                {% endfor %}
-              </ol>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
+{% id_1 = category | first | split: '/' %}
+<h3>{{ id_1[0] }}</h3>
+<h4>{{ id_1[1] }}</h4>
+<ol class="posts-list">
+{% for post in category.last %}
+<li class="posts-list-item">
+<span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
+<a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endfor %}
+</ol>
+{% endfor %}
 </section>
 <!-- /section.content -->
+
