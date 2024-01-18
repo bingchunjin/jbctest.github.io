@@ -36,7 +36,7 @@
   {% assign category_id = category | first | split: '/' %}
   {% assign current_first_part = category_id[0] %}
 
-  {% if current_first_part != prev_first_part %}
+  {% if current_first_part | strip != prev_first_part | strip %}
     {% assign prev_first_part = current_first_part %}
     {{ prev_first_part | inspect }}
     {{ current_first_part | inspect }}
