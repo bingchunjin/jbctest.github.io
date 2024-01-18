@@ -15,6 +15,8 @@ permalink: /categories/
     {% if category_parts.size == 2 %}
       <!-- 一级分类 -->
       <h3>{{ category_parts[0] }}</h3>
+      {{ category_parts[0] | inspect }}
+      {{ category_parts[1] | inspect }}
       {% assign subcategories = site.categories[category_parts[0] + '/' + category_parts[1]] %}
       {{ subcategories | inspect }}
       {% if subcategories.size > 0 %}
