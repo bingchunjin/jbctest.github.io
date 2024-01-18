@@ -38,8 +38,8 @@
 
   {% if current_first_part != prev_first_part %}
     {% assign prev_first_part = current_first_part %}
-    {{ assign prev_first_part | inspect }}
-    {{ assign  current_first_part | inspect }}
+    {{ prev_first_part | inspect }}
+    {{ current_first_part | inspect }}
   	<a href="{{ site.url }}/categories/#{{ current_first_part }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ current_first_part }}</a>
   {% endif %}
 {% endfor %}
