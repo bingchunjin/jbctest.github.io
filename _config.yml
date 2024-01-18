@@ -101,8 +101,6 @@ plugins:
     - jemoji
 #     - jekyll-mentions
 collections:
-   categories:
-        output: true
     wiki:
         output: true
         permalink: /wiki/:path/
