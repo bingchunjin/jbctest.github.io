@@ -10,15 +10,15 @@ permalink: /categories/
 
 <section class="container posts-content">
   {% assign sorted_categories = site.categories | sort %}
-  {{ site.categories | inspect }}
   {% for category in sorted_categories %}
     {% assign category_parts = category | first | split: '/' %}
-
+    {{ category | inspect }}
+    {{ category_parts | inspect }}
     {% if category_parts.size == 1 %}
       <!-- 一级分类 -->
       <h3>{{ category_parts[0] }}</h3>
       {% assign subcategories = site.categories[category_parts[0] + '/' + category_parts[1]] %}
-      {{ subcategories.size | inspect }}
+      {{ subcategories | inspect }}
       {% if subcategories.size > 0 %}
         {% for subcategory in subcategories %}
          {{ subcategory | inspect }}
