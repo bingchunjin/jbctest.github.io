@@ -21,9 +21,10 @@ permalink: /categories/
       {% if a_subcategories.size > 0 %}
         {% for b_category in a_subcategories %}
           {% assign b_category_parts = b_category | first | split: '/' %}
-          {% if b_category_parts.size == 1 %}
+          {{ b_category_parts.size | inspect }}
+          {% if b_category_parts.size == 2 %}
             <!-- 二级分类 B -->
-            <h4>{{ b_category_parts[0] }}</h4>
+            <h4>{{ b_category_parts[1] }}</h4>
             <ol class="posts-list">
               {% for post in b_category.last %}
                 <li class="posts-list-item">
