@@ -13,7 +13,7 @@ permalink: /categories/
   {% for a_category in sorted_categories %}
     {% assign a_category_parts = a_category | first | split: '/' %}
      {{ a_category_parts.size | inspect }}
-    {% if a_category_parts.size == 1 %}
+    {% if a_category_parts.size == 2 %}
       <!-- 一级分类 A -->
       <h3>{{ a_category_parts[0] }}</h3>
 
