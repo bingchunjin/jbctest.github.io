@@ -13,19 +13,16 @@ permalink: /categories/
   {% assign sorted_categories = site.categories | sort %}
   {% for category in sorted_categories %}
     {% assign category_parts = category | first | split: '/' %}
-    {{ category_parts.size | inspect }}
-    {% if category_parts.size == 2 %}
     
+    {% if category_parts.size == 2 %}
       <!-- 一级分类 A -->
       {% assign a_category = category_parts[0] %}
       {% assign b_category = category_parts[1] %}
 
-      {{ a_category | inspect }}
-      {{ b_category | inspect }}
-
       {% comment %}
         Ensure that the A-B structure exists before rendering
       {% endcomment %}
+      
         <h3>{{ a_category }}</h3>
         {% assign subcategories = site.categories[a_category+'/'+b_category] | default: empty_array %}
         {% if subcategories.size > 0 %}
@@ -45,8 +42,9 @@ permalink: /categories/
             {% endif %}
           {% endfor %}
         {% endif %}
-      {% endif %}
+      
     {% endif %}
+  {% endfor %}
 
 </section>
 <!-- /section.content -->
