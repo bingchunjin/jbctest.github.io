@@ -19,12 +19,13 @@
       {% endif %}
       
       <li class="list-group-item">
-        <a href="#{{ current_second_part }}">{{ current_second_part }}</a>
+        <a href="#{{ current_first_part }}-{{ current_second_part }}">{{ current_second_part }}</a>
         <span class="badge">{{ category[1].size }}</span>
       </li>
     {% endfor %}
   </ul>
 </div>
+
 
 
 
