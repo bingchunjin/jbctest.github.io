@@ -12,13 +12,14 @@ permalink: /categories/
 
   {% assign sorted_categories = site.categories | sort %}
   {% for category in sorted_categories %}
+    {{ category | inspect }}
     {% assign category_parts = category | first | split: '/' %}
     
     {% if category_parts.size == 1 %}
       <!-- 一级分类 -->
+      <h3>{{ category_parts[0] }}</h3>
       {% assign subcategories = site.categories[category_parts[0]] %}
       {% if subcategories.size > 0 %}
-        <h3>{{ category_parts[0] }}</h3>
         {% for subcategory in subcategories %}
           {% assign subcategory_parts = subcategory | first | split: '/' %}
           <h4>{{ subcategory_parts[1] }}</h4>
