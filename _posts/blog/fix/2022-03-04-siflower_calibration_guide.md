@@ -3,7 +3,7 @@ layout: post
 title: SIFLOWER校准方案说明手册
 categories:
 	- AX3000
-	- PRODUCE
+	- AC1200/PRODUCE
 description: 介绍SIFLOWER校准方案
 keywords: calibration
 mermaid: true

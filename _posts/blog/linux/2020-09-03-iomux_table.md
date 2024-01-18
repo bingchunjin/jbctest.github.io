@@ -3,7 +3,7 @@ layout: post
 title: Siflower IOMUX Table
 categories:
 	- AC1200
-	- LINUX
+	- AC1200/LINUX
 description: Siflower IOMUX Table
 keywords: 文档开发
 mermaid: true

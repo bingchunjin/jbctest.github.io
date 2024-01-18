@@ -4,7 +4,7 @@ title: USB驱动开发手册
 categories: LINUX
 description:
 	- AC1200
-	- USB驱动开发手册
+	- AC1200/LINUX
 keywords: 文档开发
 mermaid: true
 ---
