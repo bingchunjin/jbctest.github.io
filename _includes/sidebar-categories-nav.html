@@ -3,20 +3,25 @@
 <div id="blog-categories">
   <ul class="list-group">
     {% assign sorted_categories = site.categories | sort %}
+    {% assign prev_first_part = "" %}
+
     {% for category in sorted_categories %}
-    <li class="list-group-item">
-    <a href="#{{ category[0] }}">{{ category | first }}</a>
-    <span class="badge">{{ category[1].size }}</span>
-    </li>
+      {% assign category_id = category | first | split: '/' %}
+      {% assign current_first_part = category_id[0] %}
+
+      {% if current_first_part != prev_first_part %}
+        <li class="list-group-item">
+          <a href="#{{ current_first_part }}">{{ current_first_part }}</a>
+          <span class="badge">{{ category[1].size }}</span>
+        </li>
+        {% assign prev_first_part = current_first_part %}
+      {% endif %}
+      <li class="list-group-item">
+        <a href="#{{ category_id[0] }}-{{ category_id[1] }}">{{ category_id[1] }}</a>
+        <span class="badge">{{ category[1].size }}</span>
+      </li>
     {% endfor %}
   </ul>
 </div>
 
-<script type="text/javascript">
-
-  $(document).ready(function(){
-    $("#blog-categories li").css('text-transform','capitalize')
-  });
-
-</script>
 
