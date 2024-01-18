@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PCBA工具使用手册
-categories: AC1200/PRODUCE
+categories: AC1200,PRODUCE
 description: 介绍pcba测试及PC端工具如何使用
 keywords: pcba pc工具
 mermaid: true

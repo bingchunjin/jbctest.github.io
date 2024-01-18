@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 流量统计介绍
-categories: AX3000/DEVELOP
+categories: AX3000,DEVELOP
 description: 流量统计介绍
 keywords:  plan
 mermaid: true

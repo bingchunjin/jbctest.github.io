@@ -1,7 +1,7 @@
 ---
 layout: post
 title: wifi调试
-categories: WIFI
+categories: AC1200,WIFI
 description: 介绍wifi调试相关命令
 keywords: wifi
 mermaid: true

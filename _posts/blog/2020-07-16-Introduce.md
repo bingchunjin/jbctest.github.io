@@ -1,9 +1,7 @@
 ---
 layout: post
 title: SDK文档开发介绍
-categories:
- - AC1200
- - AC1200/DEMO
+categories: AC1200,DEMO
 description: 介绍如何进行文档开发
 keywords: 文档开发
 mermaid: true

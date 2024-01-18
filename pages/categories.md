@@ -11,7 +11,7 @@ permalink: /categories/
 <section class="container posts-content">
   {% assign sorted_categories = site.categories | sort %}
   {% for category in sorted_categories %}
-    {% assign category_name_parts = category | first | split: '/' %}
+    {% assign category_name_parts = category | first | split: ',' %}
 
     {% if category_name_parts.size == 1 %}
       <!-- 一级分类 -->
@@ -37,6 +37,6 @@ permalink: /categories/
       </ol>
     {% endif %}
   {% endfor %}
-</section>
 
+</section>
 <!-- /section.content -->

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: config文件配置手册
-categories: SYSTEM
+categories: AX3000,SYSTEM
 description: 介绍config文件及配置过程
 keywords: 配置文件
 mermaid: true
