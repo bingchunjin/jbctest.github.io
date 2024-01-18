@@ -12,8 +12,8 @@ permalink: /categories/
 
   {% assign sorted_categories = site.categories | sort %}
   {% for category in sorted_categories %}
-    {{ category | inspect }}
     {% assign category_parts = category | first | split: '/' %}
+    {{ category_parts.size | inspect }}
     
     {% if category_parts.size == 1 %}
       <!-- 一级分类 -->
